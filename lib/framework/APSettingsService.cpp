@@ -1,7 +1,5 @@
 #include <APSettingsService.h>
 
-// #include "../../src/emsesp_stub.hpp" // proddy added
-
 APSettingsService::APSettingsService(AsyncWebServer * server, FS * fs, SecurityManager * securityManager)
     : _httpEndpoint(APSettings::read, APSettings::update, this, server, AP_SETTINGS_SERVICE_PATH, securityManager)
     , _fsPersistence(APSettings::read, APSettings::update, this, fs, AP_SETTINGS_FILE)

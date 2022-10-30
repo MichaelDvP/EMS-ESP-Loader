@@ -1,8 +1,6 @@
 #include <NTPSettingsService.h>
 #include <esp_sntp.h>
 
-// #include "../../src/emsesp_stub.hpp" // proddy added
-
 using namespace std::placeholders; // for `_1` etc
 
 NTPSettingsService::NTPSettingsService(AsyncWebServer * server, FS * fs, SecurityManager * securityManager)

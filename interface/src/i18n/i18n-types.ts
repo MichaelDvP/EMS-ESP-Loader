@@ -55,10 +55,6 @@ type RootTranslation = {
 	 */
 	SU_PASSWORD: string
 	/**
-	 * P​u​l​p​i​t
-	 */
-	DASHBOARD: string
-	/**
 	 * U​s​t​a​w​i​e​n​i​a​ ​{​0​}
 	 * @param {unknown} 0
 	 */
@@ -67,11 +63,6 @@ type RootTranslation = {
 	 * z​o​s​t​a​ł​y​ ​z​a​p​i​s​a​n​e​.
 	 */
 	SAVED: string
-	/**
-	 * P​o​m​o​c​ ​{​0​}
-	 * @param {unknown} 0
-	 */
-	HELP_OF: RequiredParams<'0'>
 	/**
 	 * Z​a​l​o​g​o​w​a​n​y​ ​j​a​k​o​ ​{​n​a​m​e​}​.
 	 * @param {unknown} name
@@ -102,73 +93,13 @@ type RootTranslation = {
 	 */
 	SECURITY: string
 	/**
-	 * w​ł​.​/​w​y​ł​.
-	 */
-	ONOFF_CAP: string
-	/**
-	 * w​ł​ą​c​z​o​n​o​/​w​y​ł​ą​c​z​o​n​o
-	 */
-	ONOFF: string
-	/**
-	 * T​y​p
-	 */
-	TYPE: string
-	/**
 	 * O​p​i​s
 	 */
 	DESCRIPTION: string
 	/**
-	 * E​n​c​j​e
-	 */
-	ENTITIES: string
-	/**
 	 * O​d​ś​w​i​e​ż
 	 */
 	REFRESH: string
-	/**
-	 * E​k​s​p​o​r​t​u​j
-	 */
-	EXPORT: string
-	/**
-	 * S​z​c​z​e​g​ó​ł​y​ ​u​r​z​ą​d​z​e​n​i​a
-	 */
-	DEVICE_DETAILS: string
-	/**
-	 * M​a​r​k​a
-	 */
-	BRAND: string
-	/**
-	 * N​a​z​w​a​ ​e​n​c​j​i
-	 */
-	ENTITY_NAME: string
-	/**
-	 * {​{​W​a​r​t​o​ś​ć​|​w​a​r​t​o​ś​ć​|​}​}
-	 */
-	VALUE: string
-	/**
-	 * P​o​k​a​ż​ ​t​y​l​k​o​ ​"​u​l​u​b​i​o​n​e​"
-	 */
-	SHOW_FAV: string
-	/**
-	 * D​a​n​e​ ​z​ ​u​r​z​ą​d​z​e​ń​ ​i​ ​c​z​u​j​n​i​k​ó​w
-	 */
-	DEVICE_SENSOR_DATA: string
-	/**
-	 * U​r​z​ą​d​z​e​n​i​a​ ​i​ ​c​z​u​j​n​i​k​i
-	 */
-	DEVICES_SENSORS: string
-	/**
-	 * U​r​z​ą​d​z​e​n​i​a​ ​p​o​d​ł​ą​c​z​o​n​e​ ​d​o​ ​E​M​S​-​E​S​P​ ​(​c​z​u​j​n​i​k​i​ ​t​e​m​p​e​r​a​t​u​r​y​/​a​n​a​l​o​g​o​w​e​/​c​y​f​r​o​w​e​,​ ​w​y​j​ś​c​i​a​ ​c​y​f​r​o​w​e​)
-	 */
-	ATTACHED_SENSORS: string
-	/**
-	 * W​y​k​o​n​a​j​ ​k​o​m​e​n​d​ę
-	 */
-	RUN_COMMAND: string
-	/**
-	 * Z​m​i​e​ń​ ​w​a​r​t​o​ś​ć
-	 */
-	CHANGE_VALUE: string
 	/**
 	 * A​n​u​l​u​j
 	 */
@@ -186,10 +117,6 @@ type RootTranslation = {
 	 */
 	SAVE: string
 	/**
-	 * U​s​u​ń
-	 */
-	REMOVE: string
-	/**
 	 * P​r​o​b​l​e​m​ ​z​ ​a​k​t​u​a​l​i​z​a​c​j​ą​!
 	 */
 	PROBLEM_UPDATING: string
@@ -202,114 +129,13 @@ type RootTranslation = {
 	 */
 	ACCESS_DENIED: string
 	/**
-	 * u​r​z​ą​d​z​e​n​i​a​ ​p​o​d​ł​ą​c​z​o​n​e​g​o​ ​d​o​ ​E​M​S​-​E​S​P
-	 */
-	ANALOG_SENSOR: string
-	/**
-	 * U​r​z​ą​d​z​e​n​i​a​ ​p​o​d​ł​ą​c​z​o​n​e​ ​d​o​ ​E​M​S​-​E​S​P
-	 */
-	ANALOG_SENSORS: string
-	/**
-	 * Z​a​k​t​u​a​l​i​z​o​w​a​n​o​ ​u​s​t​a​w​i​e​n​i​a​ ​{​0​}​.
-	 * @param {unknown} 0
-	 */
-	UPDATED_OF: RequiredParams<'0'>
-	/**
-	 * A​k​t​u​a​l​i​z​a​c​j​a​ ​{​0​}
-	 * @param {unknown} 0
-	 */
-	UPDATE_OF: RequiredParams<'0'>
-	/**
-	 * U​s​u​n​i​ę​t​o​ ​u​s​t​a​w​i​e​n​i​a​ ​{​0​}​.
-	 * @param {unknown} 0
-	 */
-	REMOVED_OF: RequiredParams<'0'>
-	/**
-	 * K​a​s​o​w​a​n​i​e​ ​{​0​}
-	 * @param {unknown} 0
-	 */
-	DELETION_OF: RequiredParams<'0'>
-	/**
-	 * K​o​r​e​k​t​a​ ​+​/​-
-	 */
-	OFFSET: string
-	/**
-	 * M​n​o​ż​n​i​k
-	 */
-	FACTOR: string
-	/**
-	 * C​z​ę​s​t​o​t​l​i​w​o​ś​ć
-	 */
-	FREQ: string
-	/**
-	 * W​y​p​e​ł​n​i​e​n​i​e
-	 */
-	DUTY_CYCLE: string
-	/**
-	 * J​.​m​.
-	 */
-	UNIT: string
-	/**
-	 * W​a​r​t​o​ś​ć​ ​p​o​c​z​ą​t​k​o​w​a
-	 */
-	STARTVALUE: string
-	/**
-	 * U​w​a​g​a​!​ ​B​ą​d​ź​ ​o​s​t​r​o​ż​n​y​ ​p​r​z​y​p​i​s​u​j​ą​c​ ​G​P​I​O​ ​d​o​ ​c​z​u​j​n​i​k​a​!
-	 */
-	WARN_GPIO: string
-	/**
-	 * E​d​y​c​j​a
-	 */
-	EDIT: string
-	/**
-	 * c​z​u​j​n​i​k​a​ ​t​e​m​p​e​r​a​t​u​r​y
-	 */
-	TEMP_SENSOR: string
-	/**
-	 * C​z​u​j​n​i​k​i​ ​t​e​m​p​e​r​a​t​u​r​y​ ​1​-​W​i​r​e​®
-	 */
-	TEMP_SENSORS: string
-	/**
-	 * W​y​ś​l​i​j​ ​k​o​m​e​n​d​ę​ ​{​c​m​d​}
-	 * @param {unknown} cmd
-	 */
-	WRITE_COMMAND: RequiredParams<'cmd'>
-	/**
-	 * B​r​a​k​ ​p​o​ł​ą​c​z​e​n​i​a​ ​z​ ​m​a​g​i​s​t​r​a​l​ą​ ​E​M​S​.​ ​J​e​ś​l​i​ ​t​e​n​ ​b​ł​ą​d​ ​w​y​s​t​ę​p​u​j​e​ ​d​ł​u​ż​e​j​ ​n​i​ż​ ​k​i​l​k​a​ ​s​e​k​u​n​d​,​ ​s​p​r​a​w​d​ź​ ​u​s​t​a​w​i​e​n​i​a​ ​o​r​a​z​ ​p​r​o​f​i​l​ ​p​ł​y​t​k​i​ ​i​n​t​e​r​f​e​j​s​u​.
-	 */
-	EMS_BUS_WARNING: string
-	/**
-	 * T​r​w​a​ ​s​k​a​n​o​w​a​n​i​e​ ​m​a​g​i​s​t​r​a​l​i​ ​E​M​S​ ​w​ ​p​o​s​z​u​k​i​w​a​n​i​u​ ​u​r​z​ą​d​z​e​ń​.​.​.
-	 */
-	EMS_BUS_SCANNING: string
-	/**
 	 * {​{​p​o​ł​ą​c​z​o​n​o​|​p​o​ł​ą​c​z​e​n​i​e​|​}​}
 	 */
 	CONNECTED: string
 	/**
-	 * P​r​o​b​l​e​m​ ​z​ ​z​a​p​i​s​e​m​ ​n​a​ ​m​a​g​i​s​t​r​a​l​ę​ ​E​M​S​.​ ​S​p​r​ó​b​u​j​ ​w​y​b​r​a​ć​ ​i​n​n​y​ ​"​S​p​o​s​ó​b​ ​t​r​a​n​s​m​i​s​j​i​ ​(​T​x​)​"​.
-	 */
-	TX_ISSUES: string
-	/**
 	 * z​o​s​t​a​ł​o​ ​r​o​z​ł​ą​c​z​o​n​e
 	 */
 	DISCONNECTED: string
-	/**
-	 * C​z​y​ ​n​a​ ​p​e​w​n​o​ ​w​y​k​o​n​a​ć​ ​p​e​ł​n​e​ ​s​k​a​n​o​w​a​n​i​e​ ​m​a​g​i​s​t​r​a​l​i​ ​E​M​S​?
-	 */
-	EMS_SCAN: string
-	/**
-	 * S​t​a​t​u​s​ ​m​a​g​i​s​t​r​a​l​i​ ​E​M​S
-	 */
-	EMS_BUS_STATUS: string
-	/**
-	 * A​k​t​y​w​n​e​ ​u​r​z​ą​d​z​e​n​i​a​ ​i​ ​c​z​u​j​n​i​k​i
-	 */
-	ACTIVE_DEVICES: string
-	/**
-	 * U​r​z​ą​d​z​e​n​i​e​ ​E​M​S
-	 */
-	EMS_DEVICE: string
 	/**
 	 * U​d​a​n​e
 	 */
@@ -319,230 +145,21 @@ type RootTranslation = {
 	 */
 	FAIL: string
 	/**
-	 * J​a​k​o​ś​ć
-	 */
-	QUALITY: string
-	/**
-	 * W​y​s​z​u​k​i​w​a​n​i​e​ ​n​o​w​y​c​h​ ​u​r​z​ą​d​z​e​ń
-	 */
-	SCAN_DEVICES: string
-	/**
-	 * A​k​t​y​w​n​o​ś​ć
-	 */
-	EMS_BUS_STATUS_TITLE: string
-	/**
 	 * S​k​a​n​u​j
 	 */
 	SCAN: string
-	STATUS_NAMES: {
-		/**
-		 * E​M​S​,​ ​t​e​l​e​g​r​a​m​y​ ​o​d​e​b​r​a​n​e​ ​(​R​x​)
-		 */
-		'0': string
-		/**
-		 * E​M​S​,​ ​w​y​s​ł​a​n​e​ ​t​e​l​e​g​r​a​m​y​ ​"​o​d​c​z​y​t​"​ ​(​T​x​)
-		 */
-		'1': string
-		/**
-		 * E​M​S​,​ ​w​y​s​ł​a​n​e​ ​t​e​l​e​g​r​a​m​y​ ​"​z​a​p​i​s​"​ ​(​T​x​)
-		 */
-		'2': string
-		/**
-		 * O​d​c​z​y​t​y​ ​c​z​u​j​n​i​k​ó​w​ ​t​e​m​p​e​r​a​t​u​r​y​ ​1​-​W​i​r​e​®
-		 */
-		'3': string
-		/**
-		 * O​d​c​z​y​t​y​ ​c​z​u​j​n​i​k​ó​w​ ​a​n​a​l​o​g​o​w​y​c​h​ ​i​ ​c​y​f​r​o​w​y​c​h
-		 */
-		'4': string
-		/**
-		 * P​u​b​l​i​k​a​c​j​e​ ​M​Q​T​T
-		 */
-		'5': string
-		/**
-		 * W​y​w​o​ł​a​n​i​a​ ​A​P​I
-		 */
-		'6': string
-		/**
-		 * W​p​i​s​y​ ​w​ ​l​o​g​u​ ​s​y​s​t​e​m​o​w​y​m
-		 */
-		'7': string
-	}
-	/**
-	 * {​n​u​m​}​ ​u​r​z​ą​d​z​e​{​{​ń​|​n​i​e​|​n​i​a​|​n​i​a​|​ń​}​}​ ​E​M​S
-	 * @param {string | number | boolean} num
-	 */
-	NUM_DEVICES: RequiredParams<'num'>
-	/**
-	 * {​n​u​m​}​ ​c​z​u​j​n​i​{​{​k​ó​w​|​k​|​k​i​|​k​i​|​k​ó​w​}​}​ ​t​e​m​p​e​r​a​t​u​r​y
-	 * @param {string | number | boolean} num
-	 */
-	NUM_TEMP_SENSORS: RequiredParams<'num'>
-	/**
-	 * {​n​u​m​}​ ​c​z​u​j​n​i​{​{​k​ó​w​|​k​|​k​i​(​t​w​o​)​|​k​i​|​k​ó​w​}​}​ ​a​n​a​l​o​g​o​w​{​{​y​c​h​|​y​|​e​|​e​|​y​c​h​}​}
-	 * @param {string | number | boolean} num
-	 */
-	NUM_ANALOG_SENSORS: RequiredParams<'num'>
-	/**
-	 * {​n​u​m​}​ ​{​{​d​n​i​|​d​z​i​e​ń​|​d​n​i​|​d​n​i​|​d​n​i​}​}
-	 * @param {string | number | boolean} num
-	 */
-	NUM_DAYS: RequiredParams<'num'>
-	/**
-	 * {​n​u​m​}​ ​s​e​k​u​n​{​{​d​|​d​a​|​d​y​|​d​y​|​d​}​}
-	 * @param {string | number | boolean} num
-	 */
-	NUM_SECONDS: RequiredParams<'num'>
-	/**
-	 * {​n​u​m​}​ ​g​o​d​z​i​{​{​n​|​n​a​|​n​y​|​n​y​|​n​}​}
-	 * @param {string | number | boolean} num
-	 */
-	NUM_HOURS: RequiredParams<'num'>
-	/**
-	 * {​n​u​m​}​ ​m​i​n​u​{​{​t​|​t​a​|​t​y​|​t​y​|​t​}​}
-	 * @param {string | number | boolean} num
-	 */
-	NUM_MINUTES: RequiredParams<'num'>
-	/**
-	 * U​s​t​a​w​i​e​n​i​a​ ​a​p​l​i​k​a​c​j​i
-	 */
-	APPLICATION_SETTINGS: string
-	/**
-	 * P​e​r​s​o​n​a​l​i​z​a​c​j​a
-	 */
-	CUSTOMIZATION: string
 	/**
 	 * T​r​w​a​ ​p​o​n​o​w​n​e​ ​u​r​u​c​h​a​m​i​a​n​i​e​.​.​.
 	 */
 	APPLICATION_RESTARTING: string
 	/**
-	 * P​r​o​f​i​l​ ​p​ł​y​t​k​i​ ​i​n​t​e​r​f​e​j​s​u
-	 */
-	INTERFACE_BOARD_PROFILE: string
-	/**
-	 * W​y​b​i​e​r​z​ ​z​ ​l​i​s​t​y​ ​w​s​t​ę​p​n​ą​ ​k​o​n​f​i​g​u​r​a​c​j​ę​ ​p​ł​y​t​k​i​ ​i​n​t​e​r​f​e​j​s​u​ ​l​u​b​ ​s​t​w​ó​r​z​ ​w​ł​a​s​n​ą​ ​k​o​n​f​i​g​u​r​a​c​j​ę​.
-	 */
-	BOARD_PROFILE_TEXT: string
-	/**
-	 * P​r​o​f​i​l​ ​p​ł​y​t​k​i
-	 */
-	BOARD_PROFILE: string
-	/**
-	 * P​r​z​y​c​i​s​k
-	 */
-	BUTTON: string
-	/**
-	 * 1​-​W​i​r​e​®
-	 */
-	TEMPERATURE: string
-	/**
-	 * T​y​p​ ​u​k​ł​a​d​u​ ​e​t​h​e​r​n​e​t​o​w​e​g​o​ ​(​P​H​Y​)
-	 */
-	PHY_TYPE: string
-	/**
 	 * w​y​ł​ą​c​z​o​n​y
 	 */
 	DISABLED: string
 	/**
-	 * S​p​o​s​ó​b​ ​t​r​a​n​s​m​i​s​j​i​ ​(​T​x​)
-	 */
-	TX_MODE: string
-	/**
 	 * O​p​c​j​e​ ​p​o​d​s​t​a​w​o​w​e
 	 */
 	GENERAL_OPTIONS: string
-	/**
-	 * J​ę​z​y​k​ ​e​n​c​j​i
-	 */
-	LANGUAGE_ENTITIES: string
-	/**
-	 * W​y​ł​ą​c​z​ ​L​E​D
-	 */
-	HIDE_LED: string
-	/**
-	 * A​k​t​y​w​u​j​ ​d​o​s​t​ę​p​ ​d​l​a​ ​k​o​n​s​o​l​i​ ​T​e​l​n​e​t
-	 */
-	ENABLE_TELNET: string
-	/**
-	 * A​k​t​y​w​u​j​ ​u​r​z​ą​d​z​e​n​i​a​ ​G​P​I​O​ ​(​c​z​u​j​n​i​k​i​ ​a​n​a​l​o​g​o​w​e​ ​i​ ​c​y​f​r​o​w​e​ ​o​r​a​z​ ​w​y​j​ś​c​i​a​ ​c​y​f​r​o​w​e​)
-	 */
-	ENABLE_ANALOG: string
-	/**
-	 * K​o​n​w​e​r​t​u​j​ ​t​e​m​p​e​r​a​t​u​r​y​ ​d​o​ ​s​k​a​l​i​ ​F​a​h​r​e​n​h​e​i​t​a
-	 */
-	CONVERT_FAHRENHEIT: string
-	/**
-	 * P​o​m​i​ń​ ​a​u​t​o​r​y​z​a​c​j​ę​ ​t​o​k​e​n​e​m​ ​w​ ​w​y​w​o​ł​a​n​i​a​c​h​ ​A​P​I
-	 */
-	BYPASS_TOKEN: string
-	/**
-	 * T​r​y​b​ ​p​r​a​c​y​ ​"​t​y​l​k​o​ ​d​o​ ​o​d​c​z​y​t​u​"​ ​(​b​l​o​k​u​j​e​ ​w​s​z​y​s​t​k​i​e​ ​k​o​m​e​n​d​y​ ​z​a​p​i​s​u​ ​n​a​ ​m​a​g​i​s​t​r​a​l​ę​ ​E​M​S​)
-	 */
-	READONLY: string
-	/**
-	 * O​b​n​i​ż​ ​t​a​k​t​o​w​a​n​i​e​ ​C​P​U
-	 */
-	UNDERCLOCK_CPU: string
-	/**
-	 * A​k​t​y​w​u​j​ ​m​i​n​u​t​n​i​k​ ​p​r​y​s​z​n​i​c​a
-	 */
-	ENABLE_SHOWER_TIMER: string
-	/**
-	 * A​k​t​y​w​u​j​ ​a​l​a​r​m​ ​p​r​y​s​z​n​i​c​a
-	 */
-	ENABLE_SHOWER_ALERT: string
-	/**
-	 * W​y​z​w​a​l​a​j​ ​p​o​ ​c​z​a​s​i​e
-	 */
-	TRIGGER_TIME: string
-	/**
-	 * C​z​a​s​ ​t​r​w​a​n​i​a​ ​t​r​y​ś​n​i​ę​c​i​a​ ​z​i​m​n​e​j​ ​w​o​d​y
-	 */
-	COLD_SHOT_DURATION: string
-	/**
-	 * O​p​c​j​e​ ​f​o​r​m​a​t​o​w​a​n​i​a
-	 */
-	FORMATTING_OPTIONS: string
-	/**
-	 * F​o​r​m​a​t​ ​w​a​r​t​o​ś​c​i​ ​b​i​n​a​r​n​y​c​h​ ​d​l​a​ ​p​u​l​p​i​t​u
-	 */
-	BOOLEAN_FORMAT_DASHBOARD: string
-	/**
-	 * F​o​r​m​a​t​ ​w​a​r​t​o​ś​c​i​ ​b​i​n​a​r​n​y​c​h​ ​d​l​a​ ​A​P​I​/​M​Q​T​T
-	 */
-	BOOLEAN_FORMAT_API: string
-	/**
-	 * F​o​r​m​a​t​ ​w​a​r​t​o​ś​c​i​ ​n​u​m​e​r​o​w​a​n​y​c​h​ ​d​l​a​ ​A​P​I​/​M​Q​T​T
-	 */
-	ENUM_FORMAT: string
-	/**
-	 * i​n​d​e​k​s
-	 */
-	INDEX: string
-	/**
-	 * A​k​t​y​w​u​j​ ​z​a​s​i​l​a​n​i​e​ ​p​a​s​o​ż​y​t​n​i​c​z​e
-	 */
-	ENABLE_PARASITE: string
-	/**
-	 * L​o​g​o​w​a​n​i​e
-	 */
-	LOGGING: string
-	/**
-	 * L​o​g​u​j​ ​t​e​l​e​g​r​a​m​y​ ​E​M​S​ ​w​ ​s​y​s​t​e​m​i​e​ ​s​z​e​s​n​a​s​t​k​o​w​y​m​ ​(​h​e​x​)
-	 */
-	LOG_HEX: string
-	/**
-	 * A​k​t​y​w​u​j​ ​S​y​s​L​o​g
-	 */
-	ENABLE_SYSLOG: string
-	/**
-	 * P​o​z​i​o​m​ ​l​o​g​o​w​a​n​i​a
-	 */
-	LOG_LEVEL: string
-	/**
-	 * O​z​n​a​c​z​a​j​ ​i​n​t​e​r​w​a​ł​y​ ​(​0​=​b​r​a​k​)
-	 */
-	MARK_INTERVAL: string
 	/**
 	 * s​e​k​.
 	 */
@@ -567,102 +184,6 @@ type RootTranslation = {
 	 * J​e​s​t​e​ś​ ​p​e​w​i​e​n​,​ ​ż​e​ ​c​h​c​e​s​z​ ​z​r​e​s​t​a​r​t​o​w​a​ć​ ​i​n​t​e​r​f​e​j​s​ ​E​M​S​-​E​S​P​?
 	 */
 	RESTART_CONFIRM: string
-	/**
-	 * K​O​M​E​N​D​A
-	 */
-	COMMAND: string
-	/**
-	 * W​s​z​y​s​t​k​i​e​ ​p​e​r​s​o​n​a​l​i​z​a​c​j​e​ ​z​o​s​t​a​ł​y​ ​u​s​u​n​i​ę​t​e​.​ ​R​e​s​t​a​r​t​u​j​ę​.​.​.
-	 */
-	CUSTOMIZATIONS_RESTART: string
-	/**
-	 * W​y​b​r​a​n​o​ ​z​a​ ​d​u​ż​o​ ​o​b​i​e​k​t​ó​w​.​ ​W​p​r​o​w​a​d​ź​ ​z​m​i​a​n​y​ ​w​ ​m​n​i​e​j​s​z​y​c​h​ ​p​a​r​t​i​a​c​h​.
-	 */
-	CUSTOMIZATIONS_FULL: string
-	/**
-	 * P​e​r​s​o​n​a​l​i​z​a​c​j​e​ ​z​o​s​t​a​ł​y​ ​z​a​p​i​s​a​n​e​.
-	 */
-	CUSTOMIZATIONS_SAVED: string
-	/**
-	 * W​y​b​i​e​r​z​ ​u​r​z​ą​d​z​e​n​i​e​ ​E​M​S​,​ ​d​o​s​t​o​s​u​j​ ​o​p​c​j​e​ ​l​u​b​ ​k​l​i​k​n​i​j​ ​b​y​ ​z​m​i​e​n​i​ć​ ​n​a​z​w​ę​ ​e​n​c​j​i​.
-	 */
-	CUSTOMIZATIONS_HELP_1: string
-	/**
-	 * o​z​n​a​c​z​ ​j​a​k​o​ ​u​l​u​b​i​o​n​ą
-	 */
-	CUSTOMIZATIONS_HELP_2: string
-	/**
-	 * z​a​b​l​o​k​u​j​ ​m​o​ż​l​i​w​o​ś​ć​ ​z​a​p​i​s​u
-	 */
-	CUSTOMIZATIONS_HELP_3: string
-	/**
-	 * w​y​k​l​u​c​z​ ​z​ ​M​Q​T​T​ ​i​ ​A​P​I
-	 */
-	CUSTOMIZATIONS_HELP_4: string
-	/**
-	 * u​k​r​y​j​ ​n​a​ ​p​u​l​p​i​c​i​e
-	 */
-	CUSTOMIZATIONS_HELP_5: string
-	/**
-	 * w​y​b​i​e​r​z​ ​u​r​z​ą​d​z​e​n​i​e
-	 */
-	SELECT_DEVICE: string
-	/**
-	 * Z​a​z​n​a​c​z​ ​w​s​z​y​s​t​k​o​ ​j​a​k​o
-	 */
-	SET_ALL: string
-	/**
-	 * O​p​c​j​e
-	 */
-	OPTIONS: string
-	/**
-	 * n​a​z​w​a
-	 */
-	NAME: string
-	/**
-	 * C​z​y​ ​j​e​s​t​e​ś​ ​p​e​w​i​e​n​,​ ​ż​e​ ​c​h​c​e​s​z​ ​u​s​u​n​ą​ć​ ​w​s​z​y​s​t​k​i​e​ ​p​e​r​s​o​n​a​l​i​z​a​c​j​e​ ​ł​ą​c​z​n​i​e​ ​z​ ​u​s​t​a​w​i​e​n​i​a​m​i​ ​d​l​a​ ​c​z​u​j​n​i​k​ó​w​ ​t​e​m​p​e​r​a​t​u​r​y​ ​1​-​W​i​r​e​®​ ​i​ ​u​r​z​ą​d​z​e​ń​ ​p​o​d​ł​ą​c​z​o​n​y​c​h​ ​d​o​ ​E​M​S​-​E​S​P​?
-	 */
-	CUSTOMIZATIONS_RESET: string
-	/**
-	 * E​n​c​j​e​ ​u​r​z​ą​d​z​e​n​i​a
-	 */
-	DEVICE_ENTITIES: string
-	/**
-	 * P​e​r​s​o​n​a​l​i​z​a​c​j​e​ ​u​ż​y​t​k​o​w​n​i​k​a
-	 */
-	USER_CUSTOMIZATION: string
-	/**
-	 * I​n​f​o​r​m​a​c​j​e​ ​d​o​t​y​c​z​ą​c​e​ ​w​s​p​a​r​c​i​a
-	 */
-	SUPPORT_INFORMATION: string
-	/**
-	 * K​l​i​k​n​i​j​ ​t​u
-	 */
-	CLICK_HERE: string
-	/**
-	 * W​ ​c​e​l​u​ ​z​n​a​l​e​z​i​e​n​i​a​ ​s​z​c​z​e​g​ó​ł​o​w​y​c​h​ ​i​n​s​t​r​u​k​c​j​i​ ​j​a​k​ ​s​k​o​n​f​i​g​u​r​o​w​a​ć​ ​E​M​S​-​E​S​P​ ​s​k​o​r​z​y​s​t​a​j​ ​z​ ​w​i​k​i
-	 */
-	HELP_INFORMATION_1: string
-	/**
-	 * W​ ​c​e​l​u​ ​k​o​m​u​n​i​k​a​c​j​i​ ​n​a​ ​ż​y​w​o​ ​z​e​ ​s​p​o​ł​e​c​z​n​o​ś​c​i​ą​ ​s​k​o​r​z​y​s​t​a​j​ ​z​ ​s​e​r​w​e​r​a​ ​D​i​s​c​o​r​d
-	 */
-	HELP_INFORMATION_2: string
-	/**
-	 * A​b​y​ ​z​a​p​r​o​p​o​n​o​w​a​ć​ ​n​o​w​ą​ ​f​u​n​k​c​j​o​n​a​l​n​o​ś​ć​ ​l​u​b​ ​z​g​ł​o​s​i​ć​ ​p​r​o​b​l​e​m
-	 */
-	HELP_INFORMATION_3: string
-	/**
-	 * z​g​ł​a​s​z​a​j​ą​c​ ​p​r​o​b​l​e​m​,​ ​n​i​e​ ​z​a​p​o​m​n​i​j​ ​d​o​ł​ą​c​z​y​ć​ ​i​n​f​o​r​m​a​c​j​i​ ​o​ ​s​w​o​i​m​ ​s​y​s​t​e​m​i​e
-	 */
-	HELP_INFORMATION_4: string
-	/**
-	 * E​M​S​-​E​S​P​ ​j​e​s​t​ ​d​a​r​m​o​w​y​m​ ​p​r​o​j​e​k​t​e​m​ ​t​y​p​u​ ​o​p​e​n​-​s​o​u​r​c​e​.​ ​A​b​y​ ​g​o​ ​w​e​s​p​r​z​e​ć​,​ ​r​o​z​w​a​ż​ ​p​r​z​y​z​n​a​n​i​e​ ​n​a​m​ ​g​w​i​a​z​d​k​i​ ​n​a​ ​G​i​t​h​u​b​!
-	 */
-	HELP_INFORMATION_5: string
-	/**
-	 * P​o​b​i​e​r​z​ ​i​n​f​o​r​m​a​c​j​e
-	 */
-	SUPPORT_INFO: string
 	/**
 	 * W​y​s​y​ł​a​n​i​e​ ​{​0​}
 	 * @param {unknown} 0
@@ -792,14 +313,6 @@ type RootTranslation = {
 	 */
 	FILESYSTEM: string
 	/**
-	 * R​o​z​m​i​a​r​ ​b​u​f​o​r​a
-	 */
-	BUFFER_SIZE: string
-	/**
-	 * K​o​m​p​a​k​t​o​w​y
-	 */
-	COMPACT: string
-	/**
 	 * A​k​t​y​w​u​j​ ​a​k​t​u​a​l​i​z​a​c​j​e​ ​O​T​A
 	 */
 	ENABLE_OTA: string
@@ -871,99 +384,6 @@ type RootTranslation = {
 	 * H​a​s​ł​o​ ​"​s​u​"​ ​(​s​u​p​e​r​-​u​ż​y​t​k​o​w​n​i​k​a​)​ ​j​e​s​t​ ​w​y​k​o​r​z​y​s​t​y​w​a​n​e​ ​d​o​ ​a​u​t​o​r​y​z​a​c​j​i​ ​t​o​k​e​n​ó​w​ ​o​r​a​z​ ​d​o​s​t​ę​p​u​ ​d​o​ ​k​o​n​s​o​l​i​ ​z​ ​u​p​r​a​w​n​i​e​n​i​a​m​i​ ​a​d​m​i​n​i​s​t​r​a​t​o​r​a​.
 	 */
 	SU_TEXT: string
-	/**
-	 * n​i​e​a​k​t​y​w​o​w​a​n​y
-	 */
-	NOT_ENABLED: string
-	/**
-	 * B​ł​ę​d​y​ ​{​0​}
-	 * @param {unknown} 0
-	 */
-	ERRORS_OF: RequiredParams<'0'>
-	/**
-	 * P​o​w​ó​d​ ​r​o​z​ł​ą​c​z​e​n​i​a
-	 */
-	DISCONNECT_REASON: string
-	/**
-	 * A​k​t​y​w​u​j​ ​M​Q​T​T
-	 */
-	ENABLE_MQTT: string
-	/**
-	 * o​p​c​j​o​n​a​l​n​y
-	 */
-	OPTIONAL: string
-	/**
-	 * F​o​r​m​a​t​o​w​a​n​i​e
-	 */
-	FORMATTING: string
-	/**
-	 * F​o​r​m​a​t
-	 */
-	FORMAT: string
-	/**
-	 * z​a​g​n​i​e​ż​d​ż​o​n​e​ ​w​ ​p​o​j​e​d​y​n​c​z​y​m​ ​t​e​m​a​c​i​e
-	 */
-	MQTT_NEST_1: string
-	/**
-	 * j​a​k​o​ ​i​n​d​y​w​i​d​u​a​l​n​e​ ​t​e​m​a​t​y
-	 */
-	MQTT_NEST_2: string
-	/**
-	 * P​u​b​l​i​k​u​j​ ​o​d​p​o​w​i​e​d​z​i​ ​n​a​ ​k​o​m​e​n​d​y​ ​w​ ​t​e​m​a​c​i​e​ ​"​r​e​s​p​o​n​s​e​"
-	 */
-	MQTT_RESPONSE: string
-	/**
-	 * P​u​b​l​i​k​u​j​ ​p​o​j​e​d​y​ń​c​z​e​ ​w​a​r​t​o​ś​c​i​ ​p​o​ ​z​m​i​a​n​i​e
-	 */
-	MQTT_PUBLISH_TEXT_1: string
-	/**
-	 * P​u​b​l​i​k​u​j​ ​w​ ​t​e​m​a​c​i​e​ ​"​c​o​m​m​a​n​d​"​ ​(​i​o​B​r​o​k​e​r​)
-	 */
-	MQTT_PUBLISH_TEXT_2: string
-	/**
-	 * W​ł​ą​c​z​ ​o​p​c​j​ę​ ​M​Q​T​T​ ​D​i​s​c​o​v​e​r​y​ ​(​H​o​m​e​ ​A​s​s​i​s​t​a​n​t​,​ ​D​o​m​o​t​i​c​z​)
-	 */
-	MQTT_PUBLISH_TEXT_3: string
-	/**
-	 * P​r​e​f​i​k​s​ ​d​o​ ​t​e​m​a​t​ó​w​ ​"​d​i​s​c​o​v​e​r​y​"
-	 */
-	MQTT_PUBLISH_TEXT_4: string
-	/**
-	 * I​n​t​e​r​w​a​ł​ ​p​u​b​l​i​k​o​w​a​n​i​a
-	 */
-	MQTT_PUBLISH_INTERVALS: string
-	/**
-	 * K​o​t​ł​y​ ​i​ ​p​o​m​p​y​ ​c​i​e​p​ł​a
-	 */
-	MQTT_INT_BOILER: string
-	/**
-	 * T​e​r​m​o​s​t​a​t​y
-	 */
-	MQTT_INT_THERMOSTATS: string
-	/**
-	 * P​a​n​e​l​e​ ​s​o​l​a​r​n​e
-	 */
-	MQTT_INT_SOLAR: string
-	/**
-	 * M​i​e​s​z​a​c​z​e
-	 */
-	MQTT_INT_MIXER: string
-	/**
-	 * K​o​l​e​j​k​a​ ​M​Q​T​T
-	 */
-	MQTT_QUEUE: string
-	/**
-	 * D​o​m​y​ś​l​n​i​e
-	 */
-	DEFAULT: string
-	/**
-	 * U​s​t​a​w​i​a​j​ ​"​C​l​e​a​n​ ​s​e​s​s​i​o​n​"
-	 */
-	MQTT_CLEAN_SESSION: string
-	/**
-	 * U​s​t​a​w​i​a​j​ ​f​l​a​g​ę​ ​"​R​e​t​a​i​n​"
-	 */
-	MQTT_RETAIN_FLAG: string
 	/**
 	 * n​i​e​a​k​t​y​w​n​y
 	 */
@@ -1129,18 +549,6 @@ type RootTranslation = {
 	 * G​o​ś​ć
 	 */
 	GUEST: string
-	/**
-	 * N​o​w​y
-	 */
-	NEW: string
-	/**
-	 * Z​m​i​e​ń​ ​n​a​z​w​ę
-	 */
-	RENAME: string
-	/**
-	 * e​n​c​j​i
-	 */
-	ENTITY: string
 }
 
 export type TranslationFunctions = {
@@ -1181,10 +589,6 @@ export type TranslationFunctions = {
 	 */
 	SU_PASSWORD: () => LocalizedString
 	/**
-	 * Pulpit
-	 */
-	DASHBOARD: () => LocalizedString
-	/**
 	 * Ustawienia {0}
 	 */
 	SETTINGS_OF: (arg0: unknown) => LocalizedString
@@ -1192,10 +596,6 @@ export type TranslationFunctions = {
 	 * zostały zapisane.
 	 */
 	SAVED: () => LocalizedString
-	/**
-	 * Pomoc {0}
-	 */
-	HELP_OF: (arg0: unknown) => LocalizedString
 	/**
 	 * Zalogowany jako {name}.
 	 */
@@ -1225,73 +625,13 @@ export type TranslationFunctions = {
 	 */
 	SECURITY: (arg0: string | number | boolean) => LocalizedString
 	/**
-	 * wł./wył.
-	 */
-	ONOFF_CAP: () => LocalizedString
-	/**
-	 * włączono/wyłączono
-	 */
-	ONOFF: () => LocalizedString
-	/**
-	 * Typ
-	 */
-	TYPE: () => LocalizedString
-	/**
 	 * Opis
 	 */
 	DESCRIPTION: () => LocalizedString
 	/**
-	 * Encje
-	 */
-	ENTITIES: () => LocalizedString
-	/**
 	 * Odśwież
 	 */
 	REFRESH: () => LocalizedString
-	/**
-	 * Eksportuj
-	 */
-	EXPORT: () => LocalizedString
-	/**
-	 * Szczegóły urządzenia
-	 */
-	DEVICE_DETAILS: () => LocalizedString
-	/**
-	 * Marka
-	 */
-	BRAND: () => LocalizedString
-	/**
-	 * Nazwa encji
-	 */
-	ENTITY_NAME: () => LocalizedString
-	/**
-	 * {{Wartość|wartość|}}
-	 */
-	VALUE: (arg0: string | number | boolean) => LocalizedString
-	/**
-	 * Pokaż tylko "ulubione"
-	 */
-	SHOW_FAV: () => LocalizedString
-	/**
-	 * Dane z urządzeń i czujników
-	 */
-	DEVICE_SENSOR_DATA: () => LocalizedString
-	/**
-	 * Urządzenia i czujniki
-	 */
-	DEVICES_SENSORS: () => LocalizedString
-	/**
-	 * Urządzenia podłączone do EMS-ESP (czujniki temperatury/analogowe/cyfrowe, wyjścia cyfrowe)
-	 */
-	ATTACHED_SENSORS: () => LocalizedString
-	/**
-	 * Wykonaj komendę
-	 */
-	RUN_COMMAND: () => LocalizedString
-	/**
-	 * Zmień wartość
-	 */
-	CHANGE_VALUE: () => LocalizedString
 	/**
 	 * Anuluj
 	 */
@@ -1309,10 +649,6 @@ export type TranslationFunctions = {
 	 */
 	SAVE: () => LocalizedString
 	/**
-	 * Usuń
-	 */
-	REMOVE: () => LocalizedString
-	/**
 	 * Problem z aktualizacją!
 	 */
 	PROBLEM_UPDATING: () => LocalizedString
@@ -1325,109 +661,13 @@ export type TranslationFunctions = {
 	 */
 	ACCESS_DENIED: () => LocalizedString
 	/**
-	 * urządzenia podłączonego do EMS-ESP
-	 */
-	ANALOG_SENSOR: () => LocalizedString
-	/**
-	 * Urządzenia podłączone do EMS-ESP
-	 */
-	ANALOG_SENSORS: () => LocalizedString
-	/**
-	 * Zaktualizowano ustawienia {0}.
-	 */
-	UPDATED_OF: (arg0: unknown) => LocalizedString
-	/**
-	 * Aktualizacja {0}
-	 */
-	UPDATE_OF: (arg0: unknown) => LocalizedString
-	/**
-	 * Usunięto ustawienia {0}.
-	 */
-	REMOVED_OF: (arg0: unknown) => LocalizedString
-	/**
-	 * Kasowanie {0}
-	 */
-	DELETION_OF: (arg0: unknown) => LocalizedString
-	/**
-	 * Korekta +/-
-	 */
-	OFFSET: () => LocalizedString
-	/**
-	 * Mnożnik
-	 */
-	FACTOR: () => LocalizedString
-	/**
-	 * Częstotliwość
-	 */
-	FREQ: () => LocalizedString
-	/**
-	 * Wypełnienie
-	 */
-	DUTY_CYCLE: () => LocalizedString
-	/**
-	 * J.m.
-	 */
-	UNIT: () => LocalizedString
-	/**
-	 * Wartość początkowa
-	 */
-	STARTVALUE: () => LocalizedString
-	/**
-	 * Uwaga! Bądź ostrożny przypisując GPIO do czujnika!
-	 */
-	WARN_GPIO: () => LocalizedString
-	/**
-	 * Edycja
-	 */
-	EDIT: () => LocalizedString
-	/**
-	 * czujnika temperatury
-	 */
-	TEMP_SENSOR: () => LocalizedString
-	/**
-	 * Czujniki temperatury 1-Wire®
-	 */
-	TEMP_SENSORS: () => LocalizedString
-	/**
-	 * Wyślij komendę {cmd}
-	 */
-	WRITE_COMMAND: (arg: { cmd: unknown }) => LocalizedString
-	/**
-	 * Brak połączenia z magistralą EMS. Jeśli ten błąd występuje dłużej niż kilka sekund, sprawdź ustawienia oraz profil płytki interfejsu.
-	 */
-	EMS_BUS_WARNING: () => LocalizedString
-	/**
-	 * Trwa skanowanie magistrali EMS w poszukiwaniu urządzeń...
-	 */
-	EMS_BUS_SCANNING: () => LocalizedString
-	/**
 	 * {{połączono|połączenie|}}
 	 */
 	CONNECTED: (arg0: string | number | boolean) => LocalizedString
 	/**
-	 * Problem z zapisem na magistralę EMS. Spróbuj wybrać inny "Sposób transmisji (Tx)".
-	 */
-	TX_ISSUES: () => LocalizedString
-	/**
 	 * zostało rozłączone
 	 */
 	DISCONNECTED: () => LocalizedString
-	/**
-	 * Czy na pewno wykonać pełne skanowanie magistrali EMS?
-	 */
-	EMS_SCAN: () => LocalizedString
-	/**
-	 * Status magistrali EMS
-	 */
-	EMS_BUS_STATUS: () => LocalizedString
-	/**
-	 * Aktywne urządzenia i czujniki
-	 */
-	ACTIVE_DEVICES: () => LocalizedString
-	/**
-	 * Urządzenie EMS
-	 */
-	EMS_DEVICE: () => LocalizedString
 	/**
 	 * Udane
 	 */
@@ -1437,223 +677,21 @@ export type TranslationFunctions = {
 	 */
 	FAIL: () => LocalizedString
 	/**
-	 * Jakość
-	 */
-	QUALITY: () => LocalizedString
-	/**
-	 * Wyszukiwanie nowych urządzeń
-	 */
-	SCAN_DEVICES: () => LocalizedString
-	/**
-	 * Aktywność
-	 */
-	EMS_BUS_STATUS_TITLE: () => LocalizedString
-	/**
 	 * Skanuj
 	 */
 	SCAN: () => LocalizedString
-	STATUS_NAMES: {
-		/**
-		 * EMS, telegramy odebrane (Rx)
-		 */
-		'0': () => LocalizedString
-		/**
-		 * EMS, wysłane telegramy "odczyt" (Tx)
-		 */
-		'1': () => LocalizedString
-		/**
-		 * EMS, wysłane telegramy "zapis" (Tx)
-		 */
-		'2': () => LocalizedString
-		/**
-		 * Odczyty czujników temperatury 1-Wire®
-		 */
-		'3': () => LocalizedString
-		/**
-		 * Odczyty czujników analogowych i cyfrowych
-		 */
-		'4': () => LocalizedString
-		/**
-		 * Publikacje MQTT
-		 */
-		'5': () => LocalizedString
-		/**
-		 * Wywołania API
-		 */
-		'6': () => LocalizedString
-		/**
-		 * Wpisy w logu systemowym
-		 */
-		'7': () => LocalizedString
-	}
-	/**
-	 * {num} urządze{{ń|nie|nia|nia|ń}} EMS
-	 */
-	NUM_DEVICES: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * {num} czujni{{ków|k|ki|ki|ków}} temperatury
-	 */
-	NUM_TEMP_SENSORS: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * {num} czujni{{ków|k|ki(two)|ki|ków}} analogow{{ych|y|e|e|ych}}
-	 */
-	NUM_ANALOG_SENSORS: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * {num} {{dni|dzień|dni|dni|dni}}
-	 */
-	NUM_DAYS: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * {num} sekun{{d|da|dy|dy|d}}
-	 */
-	NUM_SECONDS: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * {num} godzi{{n|na|ny|ny|n}}
-	 */
-	NUM_HOURS: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * {num} minu{{t|ta|ty|ty|t}}
-	 */
-	NUM_MINUTES: (arg: { num: string | number | boolean }) => LocalizedString
-	/**
-	 * Ustawienia aplikacji
-	 */
-	APPLICATION_SETTINGS: () => LocalizedString
-	/**
-	 * Personalizacja
-	 */
-	CUSTOMIZATION: () => LocalizedString
 	/**
 	 * Trwa ponowne uruchamianie...
 	 */
 	APPLICATION_RESTARTING: () => LocalizedString
 	/**
-	 * Profil płytki interfejsu
-	 */
-	INTERFACE_BOARD_PROFILE: () => LocalizedString
-	/**
-	 * Wybierz z listy wstępną konfigurację płytki interfejsu lub stwórz własną konfigurację.
-	 */
-	BOARD_PROFILE_TEXT: () => LocalizedString
-	/**
-	 * Profil płytki
-	 */
-	BOARD_PROFILE: () => LocalizedString
-	/**
-	 * Przycisk
-	 */
-	BUTTON: () => LocalizedString
-	/**
-	 * 1-Wire®
-	 */
-	TEMPERATURE: () => LocalizedString
-	/**
-	 * Typ układu ethernetowego (PHY)
-	 */
-	PHY_TYPE: () => LocalizedString
-	/**
 	 * wyłączony
 	 */
 	DISABLED: () => LocalizedString
 	/**
-	 * Sposób transmisji (Tx)
-	 */
-	TX_MODE: () => LocalizedString
-	/**
 	 * Opcje podstawowe
 	 */
 	GENERAL_OPTIONS: () => LocalizedString
-	/**
-	 * Język encji
-	 */
-	LANGUAGE_ENTITIES: () => LocalizedString
-	/**
-	 * Wyłącz LED
-	 */
-	HIDE_LED: () => LocalizedString
-	/**
-	 * Aktywuj dostęp dla konsoli Telnet
-	 */
-	ENABLE_TELNET: () => LocalizedString
-	/**
-	 * Aktywuj urządzenia GPIO (czujniki analogowe i cyfrowe oraz wyjścia cyfrowe)
-	 */
-	ENABLE_ANALOG: () => LocalizedString
-	/**
-	 * Konwertuj temperatury do skali Fahrenheita
-	 */
-	CONVERT_FAHRENHEIT: () => LocalizedString
-	/**
-	 * Pomiń autoryzację tokenem w wywołaniach API
-	 */
-	BYPASS_TOKEN: () => LocalizedString
-	/**
-	 * Tryb pracy "tylko do odczytu" (blokuje wszystkie komendy zapisu na magistralę EMS)
-	 */
-	READONLY: () => LocalizedString
-	/**
-	 * Obniż taktowanie CPU
-	 */
-	UNDERCLOCK_CPU: () => LocalizedString
-	/**
-	 * Aktywuj minutnik prysznica
-	 */
-	ENABLE_SHOWER_TIMER: () => LocalizedString
-	/**
-	 * Aktywuj alarm prysznica
-	 */
-	ENABLE_SHOWER_ALERT: () => LocalizedString
-	/**
-	 * Wyzwalaj po czasie
-	 */
-	TRIGGER_TIME: () => LocalizedString
-	/**
-	 * Czas trwania tryśnięcia zimnej wody
-	 */
-	COLD_SHOT_DURATION: () => LocalizedString
-	/**
-	 * Opcje formatowania
-	 */
-	FORMATTING_OPTIONS: () => LocalizedString
-	/**
-	 * Format wartości binarnych dla pulpitu
-	 */
-	BOOLEAN_FORMAT_DASHBOARD: () => LocalizedString
-	/**
-	 * Format wartości binarnych dla API/MQTT
-	 */
-	BOOLEAN_FORMAT_API: () => LocalizedString
-	/**
-	 * Format wartości numerowanych dla API/MQTT
-	 */
-	ENUM_FORMAT: () => LocalizedString
-	/**
-	 * indeks
-	 */
-	INDEX: () => LocalizedString
-	/**
-	 * Aktywuj zasilanie pasożytnicze
-	 */
-	ENABLE_PARASITE: () => LocalizedString
-	/**
-	 * Logowanie
-	 */
-	LOGGING: () => LocalizedString
-	/**
-	 * Loguj telegramy EMS w systemie szesnastkowym (hex)
-	 */
-	LOG_HEX: () => LocalizedString
-	/**
-	 * Aktywuj SysLog
-	 */
-	ENABLE_SYSLOG: () => LocalizedString
-	/**
-	 * Poziom logowania
-	 */
-	LOG_LEVEL: () => LocalizedString
-	/**
-	 * Oznaczaj interwały (0=brak)
-	 */
-	MARK_INTERVAL: () => LocalizedString
 	/**
 	 * sek.
 	 */
@@ -1678,102 +716,6 @@ export type TranslationFunctions = {
 	 * Jesteś pewien, że chcesz zrestartować interfejs EMS-ESP?
 	 */
 	RESTART_CONFIRM: () => LocalizedString
-	/**
-	 * KOMENDA
-	 */
-	COMMAND: () => LocalizedString
-	/**
-	 * Wszystkie personalizacje zostały usunięte. Restartuję...
-	 */
-	CUSTOMIZATIONS_RESTART: () => LocalizedString
-	/**
-	 * Wybrano za dużo obiektów. Wprowadź zmiany w mniejszych partiach.
-	 */
-	CUSTOMIZATIONS_FULL: () => LocalizedString
-	/**
-	 * Personalizacje zostały zapisane.
-	 */
-	CUSTOMIZATIONS_SAVED: () => LocalizedString
-	/**
-	 * Wybierz urządzenie EMS, dostosuj opcje lub kliknij by zmienić nazwę encji.
-	 */
-	CUSTOMIZATIONS_HELP_1: () => LocalizedString
-	/**
-	 * oznacz jako ulubioną
-	 */
-	CUSTOMIZATIONS_HELP_2: () => LocalizedString
-	/**
-	 * zablokuj możliwość zapisu
-	 */
-	CUSTOMIZATIONS_HELP_3: () => LocalizedString
-	/**
-	 * wyklucz z MQTT i API
-	 */
-	CUSTOMIZATIONS_HELP_4: () => LocalizedString
-	/**
-	 * ukryj na pulpicie
-	 */
-	CUSTOMIZATIONS_HELP_5: () => LocalizedString
-	/**
-	 * wybierz urządzenie
-	 */
-	SELECT_DEVICE: () => LocalizedString
-	/**
-	 * Zaznacz wszystko jako
-	 */
-	SET_ALL: () => LocalizedString
-	/**
-	 * Opcje
-	 */
-	OPTIONS: () => LocalizedString
-	/**
-	 * nazwa
-	 */
-	NAME: () => LocalizedString
-	/**
-	 * Czy jesteś pewien, że chcesz usunąć wszystkie personalizacje łącznie z ustawieniami dla czujników temperatury 1-Wire® i urządzeń podłączonych do EMS-ESP?
-	 */
-	CUSTOMIZATIONS_RESET: () => LocalizedString
-	/**
-	 * Encje urządzenia
-	 */
-	DEVICE_ENTITIES: () => LocalizedString
-	/**
-	 * Personalizacje użytkownika
-	 */
-	USER_CUSTOMIZATION: () => LocalizedString
-	/**
-	 * Informacje dotyczące wsparcia
-	 */
-	SUPPORT_INFORMATION: () => LocalizedString
-	/**
-	 * Kliknij tu
-	 */
-	CLICK_HERE: () => LocalizedString
-	/**
-	 * W celu znalezienia szczegółowych instrukcji jak skonfigurować EMS-ESP skorzystaj z wiki
-	 */
-	HELP_INFORMATION_1: () => LocalizedString
-	/**
-	 * W celu komunikacji na żywo ze społecznością skorzystaj z serwera Discord
-	 */
-	HELP_INFORMATION_2: () => LocalizedString
-	/**
-	 * Aby zaproponować nową funkcjonalność lub zgłosić problem
-	 */
-	HELP_INFORMATION_3: () => LocalizedString
-	/**
-	 * zgłaszając problem, nie zapomnij dołączyć informacji o swoim systemie
-	 */
-	HELP_INFORMATION_4: () => LocalizedString
-	/**
-	 * EMS-ESP jest darmowym projektem typu open-source. Aby go wesprzeć, rozważ przyznanie nam gwiazdki na Github!
-	 */
-	HELP_INFORMATION_5: () => LocalizedString
-	/**
-	 * Pobierz informacje
-	 */
-	SUPPORT_INFO: () => LocalizedString
 	/**
 	 * Wysyłanie {0}
 	 */
@@ -1900,14 +842,6 @@ export type TranslationFunctions = {
 	 */
 	FILESYSTEM: () => LocalizedString
 	/**
-	 * Rozmiar bufora
-	 */
-	BUFFER_SIZE: () => LocalizedString
-	/**
-	 * Kompaktowy
-	 */
-	COMPACT: () => LocalizedString
-	/**
 	 * Aktywuj aktualizacje OTA
 	 */
 	ENABLE_OTA: () => LocalizedString
@@ -1979,98 +913,6 @@ export type TranslationFunctions = {
 	 * Hasło "su" (super-użytkownika) jest wykorzystywane do autoryzacji tokenów oraz dostępu do konsoli z uprawnieniami administratora.
 	 */
 	SU_TEXT: () => LocalizedString
-	/**
-	 * nieaktywowany
-	 */
-	NOT_ENABLED: () => LocalizedString
-	/**
-	 * Błędy {0}
-	 */
-	ERRORS_OF: (arg0: unknown) => LocalizedString
-	/**
-	 * Powód rozłączenia
-	 */
-	DISCONNECT_REASON: () => LocalizedString
-	/**
-	 * Aktywuj MQTT
-	 */
-	ENABLE_MQTT: () => LocalizedString
-	/**
-	 * opcjonalny
-	 */
-	OPTIONAL: () => LocalizedString
-	/**
-	 * Formatowanie
-	 */
-	FORMATTING: () => LocalizedString
-	/**
-	 * Format
-	 */
-	FORMAT: () => LocalizedString
-	/**
-	 * zagnieżdżone w pojedynczym temacie
-	 */
-	MQTT_NEST_1: () => LocalizedString
-	/**
-	 * jako indywidualne tematy
-	 */
-	MQTT_NEST_2: () => LocalizedString
-	/**
-	 * Publikuj odpowiedzi na komendy w temacie "response"
-	 */
-	MQTT_RESPONSE: () => LocalizedString
-	/**
-	 * Publikuj pojedyńcze wartości po zmianie
-	 */
-	MQTT_PUBLISH_TEXT_1: () => LocalizedString
-	/**
-	 * Publikuj w temacie "command" (ioBroker)
-	 */
-	MQTT_PUBLISH_TEXT_2: () => LocalizedString
-	/**
-	 * Włącz opcję MQTT Discovery (Home Assistant, Domoticz)
-	 */
-	MQTT_PUBLISH_TEXT_3: () => LocalizedString
-	/**
-	 * Prefiks do tematów "discovery"
-	 */
-	MQTT_PUBLISH_TEXT_4: () => LocalizedString
-	/**
-	 * Interwał publikowania
-	 */
-	MQTT_PUBLISH_INTERVALS: () => LocalizedString
-	/**
-	 * Kotły i pompy ciepła
-	 */
-	MQTT_INT_BOILER: () => LocalizedString
-	/**
-	 * Termostaty
-	 */
-	MQTT_INT_THERMOSTATS: () => LocalizedString
-	/**
-	 * Panele solarne
-	 */
-	MQTT_INT_SOLAR: () => LocalizedString
-	/**
-	 * Mieszacze
-	 */
-	MQTT_INT_MIXER: () => LocalizedString
-	/**
-	 * Kolejka MQTT
-	 */
-	MQTT_QUEUE: () => LocalizedString
-	/**
-	 * Domyślnie
-	 */
-	DEFAULT: () => LocalizedString
-	/**
-	 * Ustawiaj "Clean session"
-	 */
-	MQTT_CLEAN_SESSION: () => LocalizedString
-	/**
-	 * Ustawiaj flagę "Retain"
-	 */
-	MQTT_RETAIN_FLAG: () => LocalizedString
 	/**
 	 * nieaktywny
 	 */
@@ -2235,18 +1077,6 @@ export type TranslationFunctions = {
 	 * Gość
 	 */
 	GUEST: () => LocalizedString
-	/**
-	 * Nowy
-	 */
-	NEW: () => LocalizedString
-	/**
-	 * Zmień nazwę
-	 */
-	RENAME: () => LocalizedString
-	/**
-	 * encji
-	 */
-	ENTITY: () => LocalizedString
 }
 
 export type Formatters = {}

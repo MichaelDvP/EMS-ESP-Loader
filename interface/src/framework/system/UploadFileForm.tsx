@@ -23,7 +23,7 @@ const UploadFileForm: FC = () => {
   });
 
   return (
-    <SectionContent title={LL.UPLOAD_DOWNLOAD()} titleGutter>
+    <SectionContent title={LL.UPLOAD()} titleGutter>
       {restarting ? <RestartMonitor /> : <GeneralFileUpload uploadGeneralFile={uploadFile.current} />}
     </SectionContent>
   );

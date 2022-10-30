@@ -1,7 +1,5 @@
 #include <SystemStatus.h>
 
-// #include "../../src/emsesp_stub.hpp" // proddy added
-// #include "../../src/default_settings.h" // proddy added
 #include "../../src/version.h" // proddy added
 
 using namespace std::placeholders; // for `_1` etc

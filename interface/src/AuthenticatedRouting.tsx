@@ -10,7 +10,6 @@ import { Layout, RequireAdmin } from './components';
 import NetworkConnection from './framework/network/NetworkConnection';
 import AccessPoint from './framework/ap/AccessPoint';
 import NetworkTime from './framework/ntp/NetworkTime';
-import Mqtt from './framework/mqtt/Mqtt';
 import System from './framework/system/System';
 import Security from './framework/security/Security';
 
@@ -41,7 +40,6 @@ const AuthenticatedRouting: FC = () => {
         <Route path="/network/*" element={<NetworkConnection />} />
         <Route path="/ap/*" element={<AccessPoint />} />
         {features.ntp && <Route path="/ntp/*" element={<NetworkTime />} />}
-        {features.mqtt && <Route path="/mqtt/*" element={<Mqtt />} />}
         {features.security && (
           <Route
             path="/security/*"

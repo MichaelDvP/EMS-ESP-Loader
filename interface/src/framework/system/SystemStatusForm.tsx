@@ -120,6 +120,7 @@ const SystemStatusForm: FC = () => {
           startIcon={<CancelIcon />}
           variant="outlined"
           onClick={() => setConfirmRestart(false)}
+          disabled={processing}
           color="secondary"
         >
           {LL.CANCEL()}

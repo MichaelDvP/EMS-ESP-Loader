@@ -11,8 +11,8 @@
 #include <APStatus.h>
 #include <AuthenticationService.h>
 #include <FactoryResetService.h>
-#include <MqttSettingsService.h>
-#include <MqttStatus.h>
+// #include <MqttSettingsService.h>
+// #include <MqttStatus.h>
 #include <NTPSettingsService.h>
 #include <NTPStatus.h>
 #include <OTASettingsService.h>
@@ -55,6 +55,7 @@ class ESP8266React {
         return &_otaSettingsService;
     }
 
+    /*
     StatefulService<MqttSettings> * getMqttSettingsService() {
         return &_mqttSettingsService;
     }
@@ -62,6 +63,7 @@ class ESP8266React {
     AsyncMqttClient * getMqttClient() {
         return _mqttSettingsService.getMqttClient();
     }
+    */
 
     void factoryReset() {
         _factoryResetService.factoryReset();
@@ -79,8 +81,8 @@ class ESP8266React {
     NTPStatus               _ntpStatus;
     OTASettingsService      _otaSettingsService;
     UploadFileService       _uploadFileService;
-    MqttSettingsService     _mqttSettingsService;
-    MqttStatus              _mqttStatus;
+    // MqttSettingsService     _mqttSettingsService;
+    // MqttStatus              _mqttStatus;
     AuthenticationService   _authenticationService;
     RestartService          _restartService;
     FactoryResetService     _factoryResetService;

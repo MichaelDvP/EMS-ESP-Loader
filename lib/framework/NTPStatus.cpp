@@ -1,5 +1,4 @@
 #include <NTPStatus.h>
-// #include "../../src/emsesp_stub.hpp" // proddy added
 
 using namespace std::placeholders; // for `_1` etc
 
