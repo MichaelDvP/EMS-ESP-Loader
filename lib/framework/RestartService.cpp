@@ -15,6 +15,16 @@ void RestartService::restart(AsyncWebServerRequest * request) {
 
 void RestartService::partition(AsyncWebServerRequest * request) {
     const esp_partition_t* partition = esp_ota_get_next_update_partition(NULL);
+    if (!partition) {
+        request->send(400); // bad request
+        return;
+    }
+    uint64_t buffer;
+    esp_partition_read(partition, 0, &buffer, sizeof(buffer));
+    if (buffer == 0xFFFFFFFFFFFFFFFF) { // partition empty
+        request->send(400); // bad request
+        return;
+    }
     esp_ota_set_boot_partition(partition);
     request->onDisconnect(RestartService::restartNow);
     request->send(200);

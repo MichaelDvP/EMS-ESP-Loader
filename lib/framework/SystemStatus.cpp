@@ -48,7 +48,7 @@ void SystemStatus::systemStatus(AsyncWebServerRequest * request) {
     root["flash_chip_size"]  = ESP.getFlashChipSize() / 1024;
     root["flash_chip_speed"] = ESP.getFlashChipSpeed();
     uint16_t appused         = ESP.getSketchSize() / 1024;
-    uint16_t appfree         = 0x140000  / 1024 - appused; // ESP.getFreeSketchSpace()
+    uint16_t appfree         = 0x130000  / 1024 - appused; // ESP.getFreeSketchSpace()
     root["app_used"]         = appused;
     root["app_free"]         = appfree;
     uint32_t FSused          = LittleFS.usedBytes() / 1024;

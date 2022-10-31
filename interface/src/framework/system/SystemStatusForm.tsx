@@ -86,9 +86,11 @@ const SystemStatusForm: FC = () => {
   const restart = async () => {
     setProcessing(true);
     try {
-      await SystemApi.restart();
-      enqueueSnackbar(LL.APPLICATION_RESTARTING(), { variant: 'info' });
-      setRestarting(true);
+      const response = await SystemApi.restart();
+      if (response.status === 200) {
+        enqueueSnackbar(LL.APPLICATION_RESTARTING(), { variant: 'info' });
+        setRestarting(true);
+      }
     } catch (error) {
       enqueueSnackbar(extractErrorMessage(error, LL.PROBLEM_LOADING()), { variant: 'error' });
     } finally {
