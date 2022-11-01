@@ -1,8 +1,7 @@
-import { FC, useCallback, useContext, useEffect } from 'react';
+import { FC, useCallback, useEffect } from 'react';
 import { Navigate, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { AxiosError } from 'axios';
 
-import { FeaturesContext } from './contexts/features';
 import * as AuthenticationApi from './api/authentication';
 import { AXIOS } from './api/endpoints';
 import { Layout, RequireAdmin } from './components';
@@ -14,7 +13,6 @@ import System from './framework/system/System';
 import Security from './framework/security/Security';
 
 const AuthenticatedRouting: FC = () => {
-  const { features } = useContext(FeaturesContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -39,19 +37,17 @@ const AuthenticatedRouting: FC = () => {
       <Routes>
         <Route path="/network/*" element={<NetworkConnection />} />
         <Route path="/ap/*" element={<AccessPoint />} />
-        {features.ntp && <Route path="/ntp/*" element={<NetworkTime />} />}
-        {features.security && (
-          <Route
-            path="/security/*"
-            element={
-              <RequireAdmin>
-                <Security />
-              </RequireAdmin>
-            }
-          />
-        )}
+        <Route path="/ntp/*" element={<NetworkTime />} />
+        <Route
+          path="/security/*"
+          element={
+            <RequireAdmin>
+              <Security />
+            </RequireAdmin>
+          }
+        />
         <Route path="/system/*" element={<System />} />
-        <Route path="/*" element={<Navigate to={AuthenticationApi.getDefaultRoute(features)} />} />
+        <Route path="/*" element={<Navigate to={AuthenticationApi.getDefaultRoute()} />} />
       </Routes>
     </Layout>
   );

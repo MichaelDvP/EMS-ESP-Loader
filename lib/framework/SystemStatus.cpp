@@ -1,6 +1,7 @@
 #include <SystemStatus.h>
+#include "esp_ota_ops.h"
 
-#include "../../src/version.h" // proddy added
+#include "../../src/version.h"
 
 using namespace std::placeholders; // for `_1` etc
 
@@ -39,24 +40,25 @@ void SystemStatus::systemStatus(AsyncWebServerRequest * request) {
     AsyncJsonResponse * response = new AsyncJsonResponse(false, MAX_ESP_STATUS_SIZE);
     JsonObject          root     = response->getRoot();
 
-    root["emsesp_version"]   = EMSESP_APP_VERSION;
-    root["esp_platform"]     = EMSESP_PLATFORM;
-    root["cpu_freq_mhz"]     = ESP.getCpuFreqMHz();
-    root["max_alloc_heap"]   = ESP.getMaxAllocHeap() / 1024;
-    root["free_heap"]        = ESP.getFreeHeap() / 1024;
-    root["sdk_version"]      = ESP.getSdkVersion();
-    root["flash_chip_size"]  = ESP.getFlashChipSize() / 1024;
-    root["flash_chip_speed"] = ESP.getFlashChipSpeed();
-    uint16_t appused         = ESP.getSketchSize() / 1024;
-    uint16_t appfree         = 0x130000  / 1024 - appused; // ESP.getFreeSketchSpace()
-    root["app_used"]         = appused;
-    root["app_free"]         = appfree;
-    uint32_t FSused          = LittleFS.usedBytes() / 1024;
-    root["fs_used"]          = FSused;
-    root["fs_free"]          = LittleFS.totalBytes() / 1024 - FSused;
-    root["uptime"]           = format_timestamp_s();
-    root["psram_size"]       = ESP.getPsramSize() / 1024;
-    root["free_psram"]       = ESP.getFreePsram() / 1024;
+    root["emsesp_version"]          = EMSESP_APP_VERSION;
+    root["esp_platform"]            = EMSESP_PLATFORM;
+    root["cpu_freq_mhz"]            = ESP.getCpuFreqMHz();
+    root["max_alloc_heap"]          = ESP.getMaxAllocHeap() / 1024;
+    root["free_heap"]               = ESP.getFreeHeap() / 1024;
+    root["sdk_version"]             = ESP.getSdkVersion();
+    root["flash_chip_size"]         = ESP.getFlashChipSize() / 1024;
+    root["flash_chip_speed"]        = ESP.getFlashChipSpeed();
+    uint16_t                appused = ESP.getSketchSize() / 1024;
+    const esp_partition_t * running = esp_ota_get_running_partition();
+    root["app_used"]                = appused;
+    root["app_free"]                = running ? running->size / 1024 - appused : 0;
+    root["app_max"]                 = ESP.getFreeSketchSpace() / 1024; // ota partition
+    uint32_t FSused                 = LittleFS.usedBytes() / 1024;
+    root["fs_used"]                 = FSused;
+    root["fs_free"]                 = LittleFS.totalBytes() / 1024 - FSused;
+    root["uptime"]                  = format_timestamp_s();
+    root["psram_size"]              = ESP.getPsramSize() / 1024;
+    root["free_psram"]              = ESP.getFreePsram() / 1024;
 
     response->setLength();
     request->send(response);

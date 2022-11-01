@@ -347,7 +347,7 @@ const SystemStatusForm: FC = () => {
             </ListItemAvatar>
             <ListItemText
               primary={LL.APPSIZE()}
-              secondary={formatNumber(data.app_used) + ' KB / ' + formatNumber(data.app_free) + ' KB'}
+              secondary={formatNumber(data.app_used) + ' KB / ' + formatNumber(data.app_free) + ' KB -- EMS-ESP: ' + formatNumber(data.app_max) + ' KB'}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
@@ -403,8 +403,8 @@ const SystemStatusForm: FC = () => {
   };
 
   return (
-    <SectionContent title={LL.STATUS_OF( LL.SYSTEM(1) )} titleGutter>
-      {restarting ? <RestartMonitor /> : content() }
+    <SectionContent title={LL.STATUS_OF(LL.SYSTEM(1))} titleGutter>
+      {restarting ? <RestartMonitor /> : content()}
     </SectionContent>
   );
 };

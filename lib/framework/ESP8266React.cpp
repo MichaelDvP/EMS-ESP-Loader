@@ -3,8 +3,7 @@
 #include <WWWData.h>
 
 ESP8266React::ESP8266React(AsyncWebServer * server, FS * fs)
-    : _featureService(server)
-    , _securitySettingsService(server, fs)
+    : _securitySettingsService(server, fs)
     , _networkSettingsService(server, fs, &_securitySettingsService)
     , _wifiScanner(server, &_securitySettingsService)
     , _networkStatus(server, &_securitySettingsService)
@@ -14,8 +13,6 @@ ESP8266React::ESP8266React(AsyncWebServer * server, FS * fs)
     , _ntpStatus(server, &_securitySettingsService)
     , _otaSettingsService(server, fs, &_securitySettingsService)
     , _uploadFileService(server, &_securitySettingsService)
-    // , _mqttSettingsService(server, fs, &_securitySettingsService)
-    // , _mqttStatus(server, &_mqttSettingsService, &_securitySettingsService)
     , _authenticationService(server, &_securitySettingsService)
     , _restartService(server, &_securitySettingsService)
     , _factoryResetService(server, fs, &_securitySettingsService)

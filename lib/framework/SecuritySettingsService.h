@@ -1,7 +1,6 @@
 #ifndef SecuritySettingsService_h
 #define SecuritySettingsService_h
 
-#include <Features.h>
 #include <SecurityManager.h>
 #include <HttpEndpoint.h>
 #include <FSPersistence.h>
@@ -27,8 +26,6 @@
 
 #define GENERATE_TOKEN_SIZE 512
 #define GENERATE_TOKEN_PATH "/rest/generateToken"
-
-#if FT_ENABLED(FT_SECURITY)
 
 class SecuritySettings {
   public:
@@ -101,19 +98,4 @@ class SecuritySettingsService : public StatefulService<SecuritySettings>, public
     boolean validatePayload(JsonObject & parsedPayload, User * user);
 };
 
-#else
-
-class SecuritySettingsService : public SecurityManager {
-  public:
-    SecuritySettingsService(AsyncWebServer * server, FS * fs);
-    ~SecuritySettingsService();
-
-    // minimal set of functions to support framework with security settings disabled
-    Authentication               authenticateRequest(AsyncWebServerRequest * request);
-    ArRequestFilterFunction      filterRequest(AuthenticationPredicate predicate);
-    ArRequestHandlerFunction     wrapRequest(ArRequestHandlerFunction onRequest, AuthenticationPredicate predicate);
-    ArJsonRequestHandlerFunction wrapCallback(ArJsonRequestHandlerFunction onRequest, AuthenticationPredicate predicate);
-};
-
-#endif
 #endif

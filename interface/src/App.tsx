@@ -4,8 +4,6 @@ import { SnackbarProvider } from 'notistack';
 import { IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
-import { FeaturesLoader } from './contexts/features';
-
 import CustomTheme from './CustomTheme';
 import AppRouting from './AppRouting';
 
@@ -23,7 +21,7 @@ const App: FC = () => {
     notistackRef.current.closeSnackbar(key);
   };
 
-  const ColorModeContext = createContext({ toggleColorMode: () => {} });
+  const ColorModeContext = createContext({ toggleColorMode: () => { } });
 
   const colorMode = useContext(ColorModeContext);
 
@@ -49,9 +47,7 @@ const App: FC = () => {
               </IconButton>
             )}
           >
-            <FeaturesLoader>
-              <AppRouting />
-            </FeaturesLoader>
+            <AppRouting />
           </SnackbarProvider>
         </CustomTheme>
       </TypesafeI18n>

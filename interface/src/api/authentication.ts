@@ -3,14 +3,14 @@ import * as H from 'history';
 import jwtDecode from 'jwt-decode';
 import { Path } from 'react-router-dom';
 
-import { Features, Me, SignInRequest, SignInResponse } from '../types';
+import { Me, SignInRequest, SignInResponse } from '../types';
 
 import { ACCESS_TOKEN, AXIOS } from './endpoints';
 
 export const SIGN_IN_PATHNAME = 'loginPathname';
 export const SIGN_IN_SEARCH = 'loginSearch';
 
-export const getDefaultRoute = (features: Features) => (`/system`);
+export const getDefaultRoute = () => (`/system`);
 
 export function verifyAuthorization(): AxiosPromise<void> {
   return AXIOS.get('/verifyAuthorization');
@@ -39,12 +39,12 @@ export function clearLoginRedirect() {
   getStorage().removeItem(SIGN_IN_SEARCH);
 }
 
-export function fetchLoginRedirect(features: Features): Partial<Path> {
+export function fetchLoginRedirect(): Partial<Path> {
   const signInPathname = getStorage().getItem(SIGN_IN_PATHNAME);
   const signInSearch = getStorage().getItem(SIGN_IN_SEARCH);
   clearLoginRedirect();
   return {
-    pathname: signInPathname || getDefaultRoute(features),
+    pathname: signInPathname || getDefaultRoute(),
     search: (signInPathname && signInSearch) || undefined
   };
 }

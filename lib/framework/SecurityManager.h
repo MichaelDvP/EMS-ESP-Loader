@@ -1,7 +1,6 @@
 #ifndef SecurityManager_h
 #define SecurityManager_h
 
-#include <Features.h>
 #include <ArduinoJsonJWT.h>
 #include <ESPAsyncWebServer.h>
 #include <ESPUtils.h>
@@ -70,7 +69,6 @@ class AuthenticationPredicates {
 
 class SecurityManager {
   public:
-#if FT_ENABLED(FT_SECURITY)
     /*
    * Authenticate, returning the user if found
    */
@@ -80,8 +78,6 @@ class SecurityManager {
    * Generate a JWT for the user provided
    */
     virtual String generateJWT(User * user) = 0;
-
-#endif
 
     /*
    * Check the request header for the Authorization token

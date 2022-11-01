@@ -1,5 +1,4 @@
 export * from './ap';
-export * from './features';
 export * from './me';
 export * from './ntp';
 export * from './security';

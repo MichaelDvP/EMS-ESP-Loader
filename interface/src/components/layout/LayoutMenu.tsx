@@ -8,15 +8,12 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LockIcon from '@mui/icons-material/Lock';
 import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
 
-import { FeaturesContext } from '../../contexts/features';
-
 import LayoutMenuItem from './LayoutMenuItem';
 import { AuthenticatedContext } from '../../contexts/authentication';
 
 import { useI18nContext } from '../../i18n/i18n-react';
 
 const LayoutMenu: FC = () => {
-  const { features } = useContext(FeaturesContext);
   const authenticatedContext = useContext(AuthenticatedContext);
   const { LL } = useI18nContext();
 
@@ -25,7 +22,7 @@ const LayoutMenu: FC = () => {
       <List disablePadding component="nav">
         <LayoutMenuItem icon={SettingsEthernetIcon} label={LL.NETWORK(0)} to="/network" />
         <LayoutMenuItem icon={SettingsInputAntennaIcon} label={LL.ACCESS_POINT(0)} to="/ap" />
-        {features.ntp && <LayoutMenuItem icon={AccessTimeIcon} label="NTP" to="/ntp" />}
+        <LayoutMenuItem icon={AccessTimeIcon} label="NTP" to="/ntp" />
         <LayoutMenuItem
           icon={LockIcon}
           label={LL.SECURITY(0)}

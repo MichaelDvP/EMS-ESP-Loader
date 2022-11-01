@@ -245,7 +245,6 @@ const mqtt_status = {
 }
 
 // SYSTEM
-const FEATURES_ENDPOINT = REST_ENDPOINT_ROOT + 'features'
 const VERIFY_AUTHORIZATION_ENDPOINT = REST_ENDPOINT_ROOT + 'verifyAuthorization'
 const SYSTEM_STATUS_ENDPOINT = REST_ENDPOINT_ROOT + 'systemStatus'
 const SECURITY_SETTINGS_ENDPOINT = REST_ENDPOINT_ROOT + 'securitySettings'
@@ -277,14 +276,6 @@ security_settings = {
     { username: 'admin', password: 'admin', admin: true },
     { username: 'guest', password: 'guest', admin: false },
   ],
-}
-const features = {
-  project: false,
-  security: true,
-  mqtt: true,
-  ntp: true,
-  ota: true,
-  upload_firmware: true,
 }
 const verify_authentication = { access_token: '1234' }
 const signin = {
@@ -825,9 +816,6 @@ rest_server.post(SECURITY_SETTINGS_ENDPOINT, (req, res) => {
   security_settings = req.body
   console.log(JSON.stringify(security_settings))
   res.json(security_settings)
-})
-rest_server.get(FEATURES_ENDPOINT, (req, res) => {
-  res.json(features)
 })
 rest_server.get(VERIFY_AUTHORIZATION_ENDPOINT, (req, res) => {
   res.json(verify_authentication)
