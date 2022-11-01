@@ -27,6 +27,9 @@ void setup() {
         return;
     }
     esp8266React.begin();
+#if CONFIG_IDF_TARGET_ESP32
+    ETH.begin(1, 16, 23, 18, ETH_PHY_LAN8720); // E32
+#endif
     webServer.begin();
 }
 
