@@ -74,8 +74,8 @@ void NetworkSettingsService::manageSTA() {
             WiFi.begin(_state.ssid.c_str(), _state.password.c_str()); // attempt to connect to the network
             esp_wifi_set_max_tx_power(networkSettings.tx_power * 4);  // set power after wifi is startet for C3
         });
-#ifdef BOARD_C3_MINI_V1
-        // v1 needs this value, see https://github.com/emsesp/EMS-ESP32/pull/620#discussion_r993173979
+#if CONFIG_IDF_TARGET_ESP32C3
+        // Lolin Mini C3 v1 needs this value, see https://github.com/emsesp/EMS-ESP32/pull/620#discussion_r993173979
         WiFi.setTxPower(WIFI_POWER_8_5dBm); // https://www.wemos.cc/en/latest/c3/c3_mini_1_0_0.html#about-wifi
 #endif
     }
