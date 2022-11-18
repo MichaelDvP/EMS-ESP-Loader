@@ -31,9 +31,9 @@ void APSettingsService::loop() {
 }
 
 void APSettingsService::manageAP() {
-    WiFiMode_t currentWiFiMode   = WiFi.getMode();
+    WiFiMode_t currentWiFiMode = WiFi.getMode();
     // bool       network_connected = (emsesp::EMSESP::system_.ethernet_connected() || (WiFi.status() == WL_CONNECTED));
-    bool       network_connected = (WiFi.status() == WL_CONNECTED);
+    bool network_connected = (WiFi.status() == WL_CONNECTED);
     if (_state.provisionMode == AP_MODE_ALWAYS || (_state.provisionMode == AP_MODE_DISCONNECTED && !network_connected)) {
         if (_reconfigureAp || currentWiFiMode == WIFI_OFF || currentWiFiMode == WIFI_STA) {
             startAP();
@@ -53,7 +53,7 @@ void APSettingsService::startAP() {
 #endif
     if (!_dnsServer) {
         IPAddress apIp = WiFi.softAPIP();
-        _dnsServer = new DNSServer;
+        _dnsServer     = new DNSServer;
         _dnsServer->start(DNS_PORT, "*", apIp);
     }
 }

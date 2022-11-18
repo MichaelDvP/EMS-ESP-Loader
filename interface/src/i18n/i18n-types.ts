@@ -85,11 +85,11 @@ type RootTranslation = {
 	 */
 	INVALID_LOGIN: string
 	/**
-	 * {​{​N​e​t​w​o​r​k​}​}
+	 * N​e​t​w​o​r​{​{​k​|​k​}​}
 	 */
 	NETWORK: string
 	/**
-	 * {​{​S​e​c​u​r​i​t​y​}​}
+	 * S​e​c​u​r​i​t​{​{​y​|​y​}​}
 	 */
 	SECURITY: string
 	/**
@@ -105,7 +105,7 @@ type RootTranslation = {
 	 */
 	CANCEL: string
 	/**
-	 * {​{​R​e​s​e​t​}​}
+	 * R​e​s​e​{​{​t​|​t​}​}
 	 */
 	RESET: string
 	/**
@@ -129,7 +129,7 @@ type RootTranslation = {
 	 */
 	ACCESS_DENIED: string
 	/**
-	 * {​{​C​o​n​n​e​c​t​e​d​}​}
+	 * C​o​n​n​e​c​t​e​{​{​d​|​d​}​}
 	 */
 	CONNECTED: string
 	/**
@@ -194,7 +194,7 @@ type RootTranslation = {
 	 */
 	UPLOAD: string
 	/**
-	 * {​{​D​o​w​n​l​o​a​d​|​d​o​w​n​l​o​a​d​|​}​}
+	 * {​{​D​|​d​}​}​o​w​n​l​o​a​d
 	 */
 	DOWNLOAD: string
 	/**
@@ -210,7 +210,7 @@ type RootTranslation = {
 	 */
 	SUCCESSFUL: string
 	/**
-	 * {​{​S​y​s​t​e​m​}​}
+	 * S​y​s​t​e​{​{​m​|​m​|​m​}​}
 	 */
 	SYSTEM: string
 	/**
@@ -256,7 +256,7 @@ type RootTranslation = {
 	 */
 	SYSTEM_FACTORY_TEXT_DIALOG: string
 	/**
-	 * {​{​V​e​r​s​i​o​n​ ​C​h​e​c​k​}​}
+	 * V​e​r​s​i​o​n​ ​C​h​e​c​{​{​k​|​k​}​}
 	 */
 	VERSION_CHECK: string
 	/**
@@ -352,7 +352,7 @@ type RootTranslation = {
 	 */
 	MANAGE_USERS: string
 	/**
-	 * {​{​i​s​ ​A​d​m​i​n​}​}
+	 * i​s​ ​A​d​m​i​{​{​n​|​n​}​}
 	 */
 	IS_ADMIN: string
 	/**
@@ -360,7 +360,7 @@ type RootTranslation = {
 	 */
 	USER_WARNING: string
 	/**
-	 * {​{​A​d​d​}​}
+	 * A​d​{​{​d​|​d​}​}
 	 */
 	ADD: string
 	/**
@@ -376,7 +376,7 @@ type RootTranslation = {
 	 */
 	GENERATING_TOKEN: string
 	/**
-	 * {​{​U​s​e​r​}​}
+	 * U​s​e​{​{​r​|​r​}​}
 	 */
 	USER: string
 	/**
@@ -400,7 +400,7 @@ type RootTranslation = {
 	 */
 	UNKNOWN: string
 	/**
-	 * {​{​S​e​t​ ​T​i​m​e​}​}
+	 * S​e​t​ ​T​i​m​{​{​e​|​e​}​}
 	 */
 	SET_TIME: string
 	/**
@@ -428,7 +428,7 @@ type RootTranslation = {
 	 */
 	TIME_ZONE: string
 	/**
-	 * {​{​A​c​c​e​s​s​ ​P​o​i​n​t​}​}
+	 * A​c​c​e​s​s​ ​P​o​i​n​{​{​t​|​t​}​}
 	 */
 	ACCESS_POINT: string
 	/**
@@ -620,11 +620,11 @@ export type TranslationFunctions = {
 	 */
 	INVALID_LOGIN: () => LocalizedString
 	/**
-	 * {{Network}}
+	 * Networ{{k|k}}
 	 */
 	NETWORK: (arg0: string | number | boolean) => LocalizedString
 	/**
-	 * {{Security}}
+	 * Securit{{y|y}}
 	 */
 	SECURITY: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -640,7 +640,7 @@ export type TranslationFunctions = {
 	 */
 	CANCEL: () => LocalizedString
 	/**
-	 * {{Reset}}
+	 * Rese{{t|t}}
 	 */
 	RESET: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -664,7 +664,7 @@ export type TranslationFunctions = {
 	 */
 	ACCESS_DENIED: () => LocalizedString
 	/**
-	 * {{Connected}}
+	 * Connecte{{d|d}}
 	 */
 	CONNECTED: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -728,7 +728,7 @@ export type TranslationFunctions = {
 	 */
 	UPLOAD: () => LocalizedString
 	/**
-	 * {{Download|download|}}
+	 * {{D|d}}ownload
 	 */
 	DOWNLOAD: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -744,7 +744,7 @@ export type TranslationFunctions = {
 	 */
 	SUCCESSFUL: () => LocalizedString
 	/**
-	 * {{System}}
+	 * Syste{{m|m|m}}
 	 */
 	SYSTEM: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -788,7 +788,7 @@ export type TranslationFunctions = {
 	 */
 	SYSTEM_FACTORY_TEXT_DIALOG: () => LocalizedString
 	/**
-	 * {{Version Check}}
+	 * Version Chec{{k|k}}
 	 */
 	VERSION_CHECK: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -884,7 +884,7 @@ export type TranslationFunctions = {
 	 */
 	MANAGE_USERS: () => LocalizedString
 	/**
-	 * {{is Admin}}
+	 * is Admi{{n|n}}
 	 */
 	IS_ADMIN: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -892,7 +892,7 @@ export type TranslationFunctions = {
 	 */
 	USER_WARNING: () => LocalizedString
 	/**
-	 * {{Add}}
+	 * Ad{{d|d}}
 	 */
 	ADD: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -908,7 +908,7 @@ export type TranslationFunctions = {
 	 */
 	GENERATING_TOKEN: () => LocalizedString
 	/**
-	 * {{User}}
+	 * Use{{r|r}}
 	 */
 	USER: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -932,7 +932,7 @@ export type TranslationFunctions = {
 	 */
 	UNKNOWN: () => LocalizedString
 	/**
-	 * {{Set Time}}
+	 * Set Tim{{e|e}}
 	 */
 	SET_TIME: (arg0: string | number | boolean) => LocalizedString
 	/**
@@ -960,7 +960,7 @@ export type TranslationFunctions = {
 	 */
 	TIME_ZONE: () => LocalizedString
 	/**
-	 * {{Access Point}}
+	 * Access Poin{{t|t}}
 	 */
 	ACCESS_POINT: (arg0: string | number | boolean) => LocalizedString
 	/**
