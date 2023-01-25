@@ -10,11 +10,11 @@
 #include <freertos/semphr.h>
 
 #ifndef DEFAULT_BUFFER_SIZE
-#define DEFAULT_BUFFER_SIZE 2048
+#define DEFAULT_BUFFER_SIZE 1024
 #endif
 
 #ifndef FS_BUFFER_SIZE
-#define FS_BUFFER_SIZE 8192
+#define FS_BUFFER_SIZE 1024
 #endif
 
 enum class StateUpdateResult {

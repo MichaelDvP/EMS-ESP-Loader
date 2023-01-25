@@ -10,7 +10,7 @@ import en from './en'
 import nl from './nl'
 import no from './no'
 import pl from './pl'
-import se from './se'
+import sv from './sv'
 
 const localeTranslations = {
 	de,
@@ -18,7 +18,7 @@ const localeTranslations = {
 	nl,
 	no,
 	pl,
-	se,
+	sv,
 }
 
 export const loadLocale = (locale: Locales): void => {

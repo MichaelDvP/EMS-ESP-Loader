@@ -48,7 +48,7 @@ const AppRouting: FC = () => {
       <RemoveTrailingSlashes />
       <Routes>
         <Route path="/unauthorized" element={<RootRedirect message={LL.PLEASE_SIGNIN()} signOut />} />
-        <Route path="/fileUpdated" element={<RootRedirect message={LL.UPLOAD_SUCCESSFUL()} variant="success" />} />
+        <Route path="/fileUpdated" element={<Navigate to="/" />} />
         <Route
           path="/"
           element={

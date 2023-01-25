@@ -1,6 +1,6 @@
 import type { Translation } from '../i18n-types';
 
-const se: Translation = {
+const sv: Translation = {
   LANGUAGE: 'Språk',
   RETRY: 'Försök igen',
   LOADING: 'Laddar',
@@ -19,37 +19,26 @@ const se: Translation = {
   INVALID_LOGIN: 'Ogiltig login',
   NETWORK: 'Nätverk',
   SECURITY: 'Säkerhet',
-  DESCRIPTION: 'Beskrivning',
   REFRESH: 'Uppdatera',
   CANCEL: 'Avbryt',
   RESET: 'Nollsäll',
-  SEND: 'Skicka',
   SAVE: 'Spara',
   PROBLEM_UPDATING: 'Problem vid uppdatering',
   PROBLEM_LOADING: 'Problem vid hämtning',
   ACCESS_DENIED: 'Åtkomst Nekad',
   CONNECTED: 'Ansluten',
   DISCONNECTED: 'Nedkopplad',
-  SUCCESS: 'Lyckades',
-  FAIL: 'Misslyckades',
-  SCAN: 'Sök',
   APPLICATION_RESTARTING: 'EMS-ESP startar om',
   DISABLED: 'inaktiverad',
   GENERAL_OPTIONS: 'Allmänna Inställningar',
-  SECONDS: 'sekunder',
-  MINUTES: 'minuter',
-  HOURS: 'timmar',
   RESTART: 'Starta om',
-  RESTART_TEXT: 'EMS-ESP kräver en omstart för att applicera förändrade systeminställningar',
   RESTART_CONFIRM: 'Är du säker på att du vill starta om EMS-ESP?',
-  UPLOAD_OF: '{0} Uppladdning',
   UPLOAD: 'Uppladdning',
   DOWNLOAD: 'Nedladdning',
   ABORTED: 'Avbruten',
   FAILED: 'Misslyckades',
   SUCCESSFUL: 'Lyckades',
   SYSTEM: 'System',
-  LOG_OF: '{0} Logg',
   STATUS_OF: '{0} Status',
   UPLOAD_DOWNLOAD: 'Upp/Nedladdning',
   SYSTEM_VERSION_RUNNING: 'Du använder version',
@@ -75,9 +64,6 @@ const se: Translation = {
   APPSIZE: 'Application (Använt / Ledigt)',
   FILESYSTEM: 'Filsystem (Använt / Ledigt)',
   ENABLE_OTA: 'Aktivera OTA-uppdateringar',
-  DOWNLOAD_CUSTOMIZATION_TEXT: 'Ladda ner entitetsanpassningar',
-  DOWNLOAD_SETTINGS_TEXT:
-    'Ladda ner applikationsinställningar. Var försiktig om du delar dina iställlningar då de innehåller lösenord och annan känslig systeminformation',
   UPLOAD_TEXT: 'Ladda upp ett nytt firmware (.bin), inställningar eller anpassningar (.json) nedan',
   UPLOADING: 'Laddar upp',
   UPLOAD_DROP_TEXT: 'Släpp fil eller klicka här',
@@ -138,4 +124,4 @@ const se: Translation = {
   GUEST: 'Gäst'
 };
 
-export default se;
+export default sv;
