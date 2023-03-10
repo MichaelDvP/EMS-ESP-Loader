@@ -51,7 +51,7 @@ void UploadFileService::handleUpload(AsyncWebServerRequest * request, const Stri
         }
 
         if (is_firmware) {
-            // Check firmware header, 0xE9 magic offset 0 indicates esp bin, chip offset 12: esp32:0, S2:2, C3:5
+            // Check firmware header, 0xE9 magic offset 0 indicates esp bin, chip offset 12: esp32:0, S2:2, C3:5, S3:9
 #if CONFIG_IDF_TARGET_ESP32 // ESP32/PICO-D4
             if (len > 12 && (data[0] != 0xE9 || data[12] != 0)) {
                 handleError(request, 503); // service unavailable
@@ -67,9 +67,14 @@ void UploadFileService::handleUpload(AsyncWebServerRequest * request, const Stri
                 handleError(request, 503); // service unavailable
                 return;
             }
+#elif CONFIG_IDF_TARGET_ESP32S3
+            if (len > 12 && (data[0] != 0xE9 || data[12] != 9)) {
+                handleError(request, 503); // service unavailable
+                return;
+            }
 #endif
             // it's firmware - initialize the ArduinoOTA updater
-            if (Update.begin(fsize)) {
+            if (Update.begin()) {
                 if (strlen(md5) == 32) {
                     Update.setMD5(md5);
                     md5[0] = '\0';
