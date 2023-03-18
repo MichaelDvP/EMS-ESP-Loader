@@ -12,6 +12,7 @@ export type Locales =
 	| 'no'
 	| 'pl'
 	| 'sv'
+	| 'tr'
 
 export type Translation = RootTranslation
 

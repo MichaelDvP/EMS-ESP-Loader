@@ -11,6 +11,7 @@ import nl from './nl'
 import no from './no'
 import pl from './pl'
 import sv from './sv'
+import tr from './tr'
 
 const localeTranslations = {
 	de,
@@ -19,6 +20,7 @@ const localeTranslations = {
 	no,
 	pl,
 	sv,
+	tr,
 }
 
 export const loadLocale = (locale: Locales): void => {

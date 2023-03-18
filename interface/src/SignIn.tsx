@@ -24,6 +24,7 @@ import { ReactComponent as GBflag } from './i18n/GB.svg';
 import { ReactComponent as SVflag } from './i18n/SV.svg';
 import { ReactComponent as PLflag } from './i18n/PL.svg';
 import { ReactComponent as NOflag } from './i18n/NO.svg';
+import { ReactComponent as TRflag } from './i18n/TR.svg';
 
 const SignIn: FC = () => {
   const authenticationContext = useContext(AuthenticationContext);
@@ -121,17 +122,21 @@ const SignIn: FC = () => {
             <NLflag style={{ width: 24 }} />
             &nbsp;NL
           </Button>
-          <Button size="small" variant={locale === 'sv' ? 'contained' : 'outlined'} onClick={() => selectLocale('sv')}>
-            <SVflag style={{ width: 24 }} />
-            &nbsp;SV
+          <Button size="small" variant={locale === 'no' ? 'contained' : 'outlined'} onClick={() => selectLocale('no')}>
+            <NOflag style={{ width: 24 }} />
+            &nbsp;NO
           </Button>
           <Button size="small" variant={locale === 'pl' ? 'contained' : 'outlined'} onClick={() => selectLocale('pl')}>
             <PLflag style={{ width: 24 }} />
             &nbsp;PL
           </Button>
-          <Button size="small" variant={locale === 'no' ? 'contained' : 'outlined'} onClick={() => selectLocale('no')}>
-            <NOflag style={{ width: 24 }} />
-            &nbsp;NO
+          <Button size="small" variant={locale === 'sv' ? 'contained' : 'outlined'} onClick={() => selectLocale('sv')}>
+            <SVflag style={{ width: 24 }} />
+            &nbsp;SV
+          </Button>
+          <Button size="small" variant={locale === 'tr' ? 'contained' : 'outlined'} onClick={() => selectLocale('tr')}>
+            <TRflag style={{ width: 24 }} />
+            &nbsp;TR
           </Button>
         </Box>
 

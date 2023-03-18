@@ -29,6 +29,7 @@ import { ReactComponent as GBflag } from '../../i18n/GB.svg';
 import { ReactComponent as SVflag } from '../../i18n/SV.svg';
 import { ReactComponent as PLflag } from '../../i18n/PL.svg';
 import { ReactComponent as NOflag } from '../../i18n/NO.svg';
+import { ReactComponent as TRflag } from '../../i18n/TR.svg';
 
 const ItemTypography = styled(Typography)<TypographyProps>({
   maxWidth: '250px',
@@ -85,17 +86,21 @@ const LayoutAuthMenu: FC = () => {
           <NLflag style={{ width: 16, verticalAlign: 'middle' }} />
           &nbsp;NL
         </MenuItem>
-        <MenuItem key="sv" value="sv">
-          <SVflag style={{ width: 16, verticalAlign: 'middle' }} />
-          &nbsp;SV
+        <MenuItem key="no" value="no">
+          <NOflag style={{ width: 16, verticalAlign: 'middle' }} />
+          &nbsp;NO
         </MenuItem>
         <MenuItem key="pl" value="pl">
           <PLflag style={{ width: 16, verticalAlign: 'middle' }} />
           &nbsp;PL
         </MenuItem>
-        <MenuItem key="no" value="no">
-          <NOflag style={{ width: 16, verticalAlign: 'middle' }} />
-          &nbsp;NO
+        <MenuItem key="sv" value="sv">
+          <SVflag style={{ width: 16, verticalAlign: 'middle' }} />
+          &nbsp;SV
+        </MenuItem>
+        <MenuItem key="tr" value="tr">
+          <TRflag style={{ width: 16, verticalAlign: 'middle' }} />
+          &nbsp;TR
         </MenuItem>
       </TextField>
 

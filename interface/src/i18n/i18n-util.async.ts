@@ -12,6 +12,7 @@ const localeTranslationLoaders = {
 	no: () => import('./no'),
 	pl: () => import('./pl'),
 	sv: () => import('./sv'),
+	tr: () => import('./tr'),
 }
 
 const updateDictionary = (locale: Locales, dictionary: Partial<Translations>): Translations =>
