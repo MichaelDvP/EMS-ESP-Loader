@@ -21,15 +21,37 @@
 AsyncWebServer webServer(80);
 ESP8266React   esp8266React(&webServer, &LittleFS);
 
+void init_eth() {
+#if CONFIG_IDF_TARGET_ESP32
+    // default values for E32 gateway
+    int8_t phy_type     = 1 + ETH_PHY_LAN8720;
+    int8_t power        = 16;
+    int8_t phy_addr     = 1;
+    int8_t clk_mode     = ETH_CLOCK_GPIO0_IN;
+    File   settingsFile = LittleFS.open("/config/emsespSettings.json");
+    if (settingsFile) {
+        DynamicJsonDocument  root  = DynamicJsonDocument(FS_BUFFER_SIZE * 2);
+        DeserializationError error = deserializeJson(root, settingsFile);
+        if (error == DeserializationError::Ok && root.is<JsonObject>()) {
+            phy_type = root["phy_type"] | (1 + ETH_PHY_LAN8720);
+            power    = root["eth_power"] | 16;
+            phy_addr = root["eth_phy_addr"] | 1;
+            clk_mode = root["eth_clock_mode"] | ETH_CLOCK_GPIO0_IN;
+        }
+    }
+    if (phy_type > 0) {
+        ETH.begin(phy_addr, power, 23, 18, (eth_phy_type_t)(phy_type - 1), (eth_clock_mode_t)clk_mode);
+    }
+#endif
+}
+
 void setup() {
     Serial.begin(19200);
     if (!LittleFS.begin(true)) {
         return;
     }
     esp8266React.begin();
-#if CONFIG_IDF_TARGET_ESP32
-    ETH.begin(1, 16, 23, 18, ETH_PHY_LAN8720); // E32
-#endif
+    init_eth();
     webServer.begin();
 }
 
