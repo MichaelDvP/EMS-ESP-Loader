@@ -21,6 +21,8 @@ class NetworkStatus {
 
   private:
     void networkStatus(AsyncWebServerRequest * request);
+    void WiFiEvent(WiFiEvent_t event);
+    bool eth_connected_ = false;
 };
 
 #endif
