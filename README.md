@@ -2,7 +2,7 @@
 
 **EMS-ESP32** is an open-source firmware for the Espressif ESP32 microcontroller that communicates with **EMS** (Energy Management System) based equipment from manufacturers like Bosch, Buderus, Nefit, Junkers, Worcester and Sieger.
 
-This project is only a loader in a smaller factory or OTA-partitions, giving more flash-memory space to full featured EMS-ESP. The loader has to be flashed via USB, use espressif esptool or a special EMS-ESP-Loader-Flasher. Supports S32, E32 gateways, ESP32, ESP32-C3, and ESP32-S2 Wifi boards.
+This project is only a loader in a smaller factory or OTA-partition, giving more flash-memory space to full featured EMS-ESP on 4MB ESP32 versions. The loader has to be first flashed via USB, use espressif esptool or a special EMS-ESP-Loader-Flasher. Supports S32, E32 gateways, ESP32, ESP32-C3, and ESP32-S2 boards. 
 
 ![sreenshot](media/EMS-ESP-Loader.png)
 
