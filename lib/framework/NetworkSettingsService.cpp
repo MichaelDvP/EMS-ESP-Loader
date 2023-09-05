@@ -89,4 +89,8 @@ void NetworkSettingsService::WiFiEvent(WiFiEvent_t event) {
             _stopping              = false;
         }
     }
+    if (event == ARDUINO_EVENT_WIFI_STA_DISCONNECTED && WiFi.scanComplete() != -1) {
+        WiFi.scanDelete();
+        WiFi.scanNetworks(true);
+    }
 }
