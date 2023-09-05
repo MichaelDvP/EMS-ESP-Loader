@@ -132,7 +132,7 @@ class AsyncWebHeader {
     ~AsyncWebHeader(){}
     const String& name() const { return _name; }
     const String& value() const { return _value; }
-    String toString() const { return String(_name + ": " + _value + "\r\n"); }
+    String toString() const { return String(_name + F(": ") + _value + F("\r\n")); }
 };
 
 /*
@@ -229,8 +229,8 @@ class AsyncWebServerRequest {
     const String& contentType() const { return _contentType; }
     size_t contentLength() const { return _contentLength; }
     bool multipart() const { return _isMultipart; }
-    const __FlashStringHelper *methodToString() const;
-    const __FlashStringHelper *requestedConnTypeToString() const;
+    const char *methodToString() const;
+    const char *requestedConnTypeToString() const;
     RequestedConnectionType requestedConnType() const { return _reqconntype; }
     bool isExpectedRequestedConnType(RequestedConnectionType erct1, RequestedConnectionType erct2 = RCT_NOT_USED, RequestedConnectionType erct3 = RCT_NOT_USED);
     void onDisconnect (ArDisconnectHandler fn);

@@ -128,20 +128,20 @@ String generateDigestHash(const char * username, const char * password, const ch
 }
 
 String requestDigestAuthentication(const char * realm){
-  String header = ("realm=\"");
+  String header = F("realm=\"");
   if(realm == NULL)
-    header.concat("asyncesp");
+    header.concat(F("asyncesp"));
   else
     header.concat(realm);
-  header.concat("\", qop=\"auth\", nonce=\"");
+  header.concat(F("\", qop=\"auth\", nonce=\""));
   header.concat(genRandomMD5());
-  header.concat("\", opaque=\"");
+  header.concat(F("\", opaque=\""));
   header.concat(genRandomMD5());
   header += '"';
   return header;
 }
 
-bool checkDigestAuthentication(const char * header, const __FlashStringHelper *method, const char * username, const char * password, const char * realm, bool passwordIsHash, const char * nonce, const char * opaque, const char * uri){
+bool checkDigestAuthentication(const char * header, const char *method, const char * username, const char * password, const char * realm, bool passwordIsHash, const char * nonce, const char * opaque, const char * uri){
   if(username == NULL || password == NULL || header == NULL || method == NULL){
     //os_printf("AUTH FAIL: missing requred fields\n");
     return false;
@@ -163,7 +163,7 @@ bool checkDigestAuthentication(const char * header, const __FlashStringHelper *m
   String myNc = String();
   String myCnonce = String();
 
-  myHeader += (", ");
+  myHeader += F(", ");
   do {
     String avLine = myHeader.substring(0, nextBreak);
     avLine.trim();
@@ -181,42 +181,42 @@ bool checkDigestAuthentication(const char * header, const __FlashStringHelper *m
       avLine = avLine.substring(1, avLine.length() - 1);
     }
 
-    if(varName.equals("username")){
+    if(varName.equals(F("username"))){
       if(!avLine.equals(username)){
         //os_printf("AUTH FAIL: username\n");
         return false;
       }
       myUsername = avLine;
-    } else if(varName.equals("realm")){
+    } else if(varName.equals(F("realm"))){
       if(realm != NULL && !avLine.equals(realm)){
         //os_printf("AUTH FAIL: realm\n");
         return false;
       }
       myRealm = avLine;
-    } else if(varName.equals("nonce")){
+    } else if(varName.equals(F("nonce"))){
       if(nonce != NULL && !avLine.equals(nonce)){
         //os_printf("AUTH FAIL: nonce\n");
         return false;
       }
       myNonce = avLine;
-    } else if(varName.equals("opaque")){
+    } else if(varName.equals(F("opaque"))){
       if(opaque != NULL && !avLine.equals(opaque)){
         //os_printf("AUTH FAIL: opaque\n");
         return false;
       }
-    } else if(varName.equals("uri")){
+    } else if(varName.equals(F("uri"))){
       if(uri != NULL && !avLine.equals(uri)){
         //os_printf("AUTH FAIL: uri\n");
         return false;
       }
       myUri = avLine;
-    } else if(varName.equals("response")){
+    } else if(varName.equals(F("response"))){
       myResponse = avLine;
-    } else if(varName.equals("qop")){
+    } else if(varName.equals(F("qop"))){
       myQop = avLine;
-    } else if(varName.equals("nc")){
+    } else if(varName.equals(F("nc"))){
       myNc = avLine;
-    } else if(varName.equals("cnonce")){
+    } else if(varName.equals(F("cnonce"))){
       myCnonce = avLine;
     }
   } while(nextBreak > 0);
