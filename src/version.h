@@ -1,4 +1,4 @@
-#define EMSESP_APP_VERSION "3.5.1_loader"
+#define EMSESP_APP_VERSION "3.5.1_loader_g"
 
 #if CONFIG_IDF_TARGET_ESP32C3
 #define EMSESP_PLATFORM "ESP32-C3";
