@@ -19,8 +19,7 @@
 #include <ESP8266React.h>
 
 AsyncWebServer webServer(80);
-ESP8266React * esp8266React;
-//ESP8266React   esp8266React(&webServer, &LittleFS);
+ESP8266React   esp8266React(&webServer, &LittleFS);
 
 void init_eth() {
 #if CONFIG_IDF_TARGET_ESP32
@@ -49,14 +48,11 @@ void init_eth() {
 void setup() {
     Serial.begin(19200);
     LittleFS.begin(true);
-    // esp8266React.begin();
-    esp8266React = new ESP8266React(&webServer, &LittleFS);
-    esp8266React->begin();
+    esp8266React.begin();
     init_eth();
     webServer.begin();
 }
 
 void loop() {
-    // esp8266React.loop(); // web services
-    esp8266React->loop(); // web services
+    esp8266React.loop(); // web services
 }
