@@ -40,7 +40,6 @@ const nl: Translation = {
   SUCCESSFUL: 'successvol',
   SYSTEM: 'Systeem',
   STATUS_OF: '{0} Status',
-  UPLOAD_DOWNLOAD: 'Upload/Download',
   SYSTEM_VERSION_RUNNING: 'op dit moment draai je versie',
   SYSTEM_APPLY_FIRMWARE: 'om de nieuwe firmware te activeren',
   CLOSE: 'Sluiten',

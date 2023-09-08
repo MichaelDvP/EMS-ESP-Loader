@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import { CssBaseline } from '@mui/material';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
-import { blueGrey, blue } from '@mui/material/colors';
+// import { blueGrey, blue } from '@mui/material/colors';
 
 import { RequiredChildrenProps } from './utils';
 
@@ -12,12 +12,12 @@ const theme = responsiveFontSizes(
       fontSize: 13
     },
     palette: {
-      mode: 'dark',
+      // mode: 'dark',
       secondary: {
-        main: blue[500]
+        main: '#2196f3' // blue[500]
       },
       info: {
-        main: blueGrey[500]
+        main: '#607d8b' // blueGrey[500]
       }
     }
   })

@@ -1,6 +1,6 @@
 import { FC, useContext } from 'react';
 
-import { Avatar, Badge, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText } from '@mui/material';
+import { Avatar, Badge, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText, useTheme } from '@mui/material';
 
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import LockIcon from '@mui/icons-material/Lock';
@@ -11,6 +11,7 @@ import { MessageBox } from '../../components';
 import { WiFiEncryptionType, WiFiNetwork, WiFiNetworkList } from '../../types';
 
 import { WiFiConnectionContext } from './WiFiConnectionContext';
+import type { Theme } from '@mui/material';
 
 import { useI18nContext } from '../../i18n/i18n-react';
 
@@ -35,13 +36,27 @@ export const networkSecurityMode = ({ encryption_type }: WiFiNetwork) => {
       return 'WPA2 Enterprise';
     case WiFiEncryptionType.WIFI_AUTH_OPEN:
       return 'None';
+    case WiFiEncryptionType.WIFI_AUTH_WPA3_PSK:
+      return 'WPA3';
+    case WiFiEncryptionType.WIFI_AUTH_WPA2_WPA3_PSK:
+      return 'WPA2/WPA3';
     default:
-      return 'Unknown';
+      return 'Unknown: ' + encryption_type;
   }
+};
+
+const networkQualityHighlight = ({ rssi }: WiFiNetwork, theme: Theme) => {
+  if (rssi <= -85) {
+    return theme.palette.error.main;
+  } else if (rssi <= -75) {
+    return theme.palette.warning.main;
+  }
+  return theme.palette.success.main;
 };
 
 const WiFiNetworkSelector: FC<WiFiNetworkSelectorProps> = ({ networkList }) => {
   const { LL } = useI18nContext();
+  const theme = useTheme();
 
   const wifiConnectionContext = useContext(WiFiConnectionContext);
 
@@ -56,8 +71,8 @@ const WiFiNetworkSelector: FC<WiFiNetworkSelectorProps> = ({ networkList }) => {
           secondary={'Security: ' + networkSecurityMode(network) + ', Ch: ' + network.channel}
         />
         <ListItemIcon>
-          <Badge badgeContent={network.rssi + 'db'}>
-            <WifiIcon />
+          <Badge badgeContent={network.rssi + 'dBm'}>
+            <WifiIcon sx={{ color: networkQualityHighlight(network, theme) }} />
           </Badge>
         </ListItemIcon>
       </ListItem>

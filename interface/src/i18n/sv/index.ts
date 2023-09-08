@@ -40,7 +40,6 @@ const sv: Translation = {
   SUCCESSFUL: 'Lyckades',
   SYSTEM: 'System',
   STATUS_OF: '{0} Status',
-  UPLOAD_DOWNLOAD: 'Upp/Nedladdning',
   SYSTEM_VERSION_RUNNING: 'Du använder version',
   SYSTEM_APPLY_FIRMWARE: 'för att aktivera ny firmware',
   CLOSE: 'Stäng',

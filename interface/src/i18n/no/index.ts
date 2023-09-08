@@ -40,7 +40,6 @@ const no: Translation = {
   SUCCESSFUL: 'vellykket',
   SYSTEM: 'System',
   STATUS_OF: '{0} Status',
-  UPLOAD_DOWNLOAD: 'Opp/Nedlasting',
   SYSTEM_VERSION_RUNNING: 'Du benytter versjon',
   SYSTEM_APPLY_FIRMWARE: 'for å aktivere ny firmware',
   CLOSE: 'Steng',

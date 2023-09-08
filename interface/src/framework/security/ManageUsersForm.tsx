@@ -47,7 +47,7 @@ const ManageUsersForm: FC = () => {
     `,
     HeaderRow: `
       text-transform: uppercase;
-      background-color: black;
+      background-color: white;
       color: #90CAF9;
       .th {
         padding: 8px;
@@ -62,12 +62,6 @@ const ManageUsersForm: FC = () => {
         border-bottom: 1px solid #565656;
       }
 
-      &:nth-of-type(odd) .td {
-        background-color: #303030;
-      }
-      &:nth-of-type(even) .td {
-        background-color: #1e1e1e;
-      }
     `,
     BaseCell: `
       &:nth-of-type(2) {

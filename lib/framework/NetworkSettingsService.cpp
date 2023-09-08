@@ -62,18 +62,16 @@ void NetworkSettingsService::manageSTA() {
         WiFi.setHostname(_state.hostname.c_str()); // set hostname
 
         // www.esp32.com/viewtopic.php?t=12055
-        read([&](NetworkSettings & networkSettings) {
-            if (networkSettings.bandwidth20) {
-                esp_wifi_set_bandwidth((wifi_interface_t)ESP_IF_WIFI_STA, WIFI_BW_HT20);
-            } else {
-                esp_wifi_set_bandwidth((wifi_interface_t)ESP_IF_WIFI_STA, WIFI_BW_HT40);
-            }
-            if (networkSettings.nosleep) {
-                WiFi.setSleep(false); // turn off sleep - WIFI_PS_NONE
-            }
-            WiFi.begin(_state.ssid.c_str(), _state.password.c_str()); // attempt to connect to the network
-            esp_wifi_set_max_tx_power(networkSettings.tx_power * 4);  // set power after wifi is startet for C3
-        });
+        if (_state.bandwidth20) {
+            esp_wifi_set_bandwidth((wifi_interface_t)ESP_IF_WIFI_STA, WIFI_BW_HT20);
+        } else {
+            esp_wifi_set_bandwidth((wifi_interface_t)ESP_IF_WIFI_STA, WIFI_BW_HT40);
+        }
+        if (_state.nosleep) {
+            WiFi.setSleep(false); // turn off sleep - WIFI_PS_NONE
+        }
+        WiFi.begin(_state.ssid.c_str(), _state.password.c_str()); // attempt to connect to the network
+        esp_wifi_set_max_tx_power(_state.tx_power * 4);           // set power after wifi is startet for C3
 #if CONFIG_IDF_TARGET_ESP32C3
         // Lolin Mini C3 v1 needs this value, see https://github.com/emsesp/EMS-ESP32/pull/620#discussion_r993173979
         WiFi.setTxPower(WIFI_POWER_8_5dBm); // https://www.wemos.cc/en/latest/c3/c3_mini_1_0_0.html#about-wifi
@@ -89,8 +87,8 @@ void NetworkSettingsService::WiFiEvent(WiFiEvent_t event) {
             _stopping              = false;
         }
     }
-    if (event == ARDUINO_EVENT_WIFI_STA_DISCONNECTED && WiFi.scanComplete() != -1) {
-        WiFi.scanDelete();
-        WiFi.scanNetworks(true);
+    // wait 3 seconds before reconnecting
+    if (event == ARDUINO_EVENT_WIFI_STA_DISCONNECTED) {
+        _lastConnectionAttempt = millis();
     }
 }

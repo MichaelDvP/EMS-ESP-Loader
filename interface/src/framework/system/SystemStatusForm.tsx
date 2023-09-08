@@ -308,7 +308,7 @@ const SystemStatusForm: FC = () => {
               }
             />
           </ListItem>
-          {data.psram_size !== undefined && data.free_psram !== undefined && (
+          {data.psram_size > 0 && (
             <>
               <Divider variant="inset" component="li" />
               <ListItem>

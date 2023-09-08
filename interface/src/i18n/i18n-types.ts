@@ -179,10 +179,6 @@ type RootTranslation = {
 	 */
 	STATUS_OF: RequiredParams<'0'>
 	/**
-	 * P​r​z​e​s​y​ł​a​n​i​e​ ​p​l​i​k​ó​w
-	 */
-	UPLOAD_DOWNLOAD: string
-	/**
 	 * O​b​e​c​n​i​e​ ​z​a​i​n​s​t​a​l​o​w​a​n​a​ ​w​e​r​s​j​a​ ​t​o​:
 	 */
 	SYSTEM_VERSION_RUNNING: string
@@ -655,10 +651,6 @@ export type TranslationFunctions = {
 	 * Status {0}
 	 */
 	STATUS_OF: (arg0: unknown) => LocalizedString
-	/**
-	 * Przesyłanie plików
-	 */
-	UPLOAD_DOWNLOAD: () => LocalizedString
 	/**
 	 * Obecnie zainstalowana wersja to:
 	 */

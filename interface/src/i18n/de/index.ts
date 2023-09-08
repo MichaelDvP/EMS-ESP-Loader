@@ -40,7 +40,6 @@ const de: Translation = {
   SUCCESSFUL: 'erfolgreich',
   SYSTEM: 'System',
   STATUS_OF: '{0} Status',
-  UPLOAD_DOWNLOAD: 'Hoch-/Herunterladen',
   SYSTEM_VERSION_RUNNING: 'Sie verwenden die Version',
   SYSTEM_APPLY_FIRMWARE: 'um die neue Firmware anzuwenden',
   CLOSE: 'Schließen',

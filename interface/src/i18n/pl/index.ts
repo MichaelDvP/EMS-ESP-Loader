@@ -40,7 +40,6 @@ const pl: Translation = {
   SUCCESSFUL: 'powiodło się.',
   SYSTEM: '{{S|s||s}}yste{{m|mu||mowy}}',
   STATUS_OF: 'Status {0}',
-  UPLOAD_DOWNLOAD: 'Przesyłanie plików',
   SYSTEM_VERSION_RUNNING: 'Obecnie zainstalowana wersja to:',
   SYSTEM_APPLY_FIRMWARE: '',
   CLOSE: 'Zamknij',

@@ -40,7 +40,6 @@ const en: BaseTranslation = {
   SUCCESSFUL: 'successful',
   SYSTEM: 'Syste{{m|m|m}}',
   STATUS_OF: '{0} Status',
-  UPLOAD_DOWNLOAD: 'Upload/Download',
   SYSTEM_VERSION_RUNNING: 'You are currently running version',
   SYSTEM_APPLY_FIRMWARE: 'to apply the new firmware',
   CLOSE: 'Close',

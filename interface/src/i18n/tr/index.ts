@@ -42,7 +42,6 @@ const tr: Translation = {
   SUCCESSFUL: 'başarılı',
   SYSTEM: 'Sistem',
   STATUS_OF: '{0} Durumu',
-  UPLOAD_DOWNLOAD: 'Yükleme/İndirme',
   SYSTEM_VERSION_RUNNING: 'Şu anda çalıştırdığınız sürüm',
   SYSTEM_APPLY_FIRMWARE: 'yeni bellenimi uygulamak için',
   CLOSE: 'Kapat',

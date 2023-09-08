@@ -24,7 +24,7 @@ const System: FC = () => {
       <RouterTabs value={routerTab}>
         <Tab value="status" label={LL.STATUS_OF(LL.SYSTEM(1))} />
         <Tab value="ota" label={LL.SETTINGS_OF("OTA")} disabled={!me.admin} />
-        <Tab value="upload" label={LL.UPLOAD_DOWNLOAD()} disabled={!me.admin} />
+        <Tab value="upload" label={LL.UPLOAD()} disabled={!me.admin} />
       </RouterTabs>
       <Routes>
         <Route path="status" element={<SystemStatusForm />} />
